@@ -18,21 +18,21 @@ def display_banner():
    ▒ ▓███▀ ░░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒░▒████▒░██░░▒▓███▀▒▒██░   ▓██░    
     """
     console.print(Text(banner, style="bold #BF00FF"))
-    console.print(Panel("[bold #00FF00]☠ يوسف اشتيوي - النسخة السيادية المطلقة V10.1 ☠[/]", border_style="#00FF00", subtitle="[REALITY: ABSOLUTE]", subtitle_align="right"))
-    console.print("[bold #BF00FF]PREDATOR STATUS: ACTIVE | ALL TOOLS ARMED[/]\n")
+    console.print(Panel("[bold #00FF00]☠ YOUSEF SHTIWE - SOVEREIGN SUPREMACY V11 ☠[/]", border_style="#00FF00", subtitle="[REALITY: ABSOLUTE]", subtitle_align="right"))
+    console.print("[bold #BF00FF]PREDATOR STATUS: ACTIVE | UNIVERSAL ARSENAL ARMED[/]\n")
 
 def run_full_arsenal_install():
     display_banner()
-    console.print(Panel("[bold #00FF00]☠ بدء الإصلاح الشامل وتجهيز الترسانة السيادية ☠[/]", border_style="#00FF00"))
+    console.print(Panel("[bold #00FF00]☠ INITIATING TOTAL ARSENAL PROCUREMENT V11 ☠[/]", border_style="#00FF00"))
     script_path = "scripts/install_arsenal.sh"
     if not os.path.exists(script_path):
-        console.print("[bold red][!] ملف التجهيز مفقود![/]")
+        console.print("[bold red][!] Master Installer not found![/]")
         return
     try:
         subprocess.run(["bash", script_path], check=True)
-        console.print("[bold green][✓] تم سحق الأخطاء وتجهيز الترسانة بالكامل لـ يوسف اشتيوي.[/]")
+        console.print("[bold green][✓] ARSENAL PROCUREMENT SUCCESSFUL.[/]")
     except Exception as e:
-        console.print(f"[bold red][!] انقطع التجهيز: {e}[/]")
+        console.print(f"[bold red][!] Procurement Failure: {e}[/]")
 
 def launch_core(subcommand=None, extra_args=None):
     try:
@@ -44,7 +44,7 @@ def launch_core(subcommand=None, extra_args=None):
         sys.argv[0] = "yousef"
         core_main()
     except Exception as e:
-        console.print(f"[bold red][!] خطأ في نواة السيادة: {e}[/]")
+        console.print(f"[bold red][!] Sovereign Core Error: {e}[/]")
         sys.exit(1)
 
 def main():
@@ -53,12 +53,16 @@ def main():
         launch_core("chat")
         return
     cmd = sys.argv[1].lower()
-    if cmd == "full-install" or cmd == "fix":
+    if cmd in ["full-install", "fix", "setup"]:
         run_full_arsenal_install()
         return
     if cmd == "offensive":
         target = sys.argv[2] if len(sys.argv) > 2 else "local"
         launch_core("chat", ["--query", f"Execute offensive mission on {target}"])
+        return
+    if cmd == "status":
+        display_banner()
+        launch_core("status")
         return
     launch_core(cmd, sys.argv[2:])
 
