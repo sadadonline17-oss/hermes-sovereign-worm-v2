@@ -1,6 +1,5 @@
 #!/bin/bash
 # Protocol: Sovereign V13.2 - Forced Module Injection
-# Commander: YOUSEF SHTIWE
 # Target: Termux Python 3.13 / Module pywt Missing Fix
 
 echo -e "\033[1;35m[*] INITIATING FORCED MODULE INJECTION V13.2...\033[0m"
@@ -19,14 +18,13 @@ pkg install python-pywavelets python-numpy python-pillow -y
 source "$VENV_DIR/bin/activate"
 
 # 3. THE CRITICAL LINK: Link system-installed PyWavelets into the Venv
-# In Termux, pkg installs to $PREFIX/lib/python3.13/site-packages/pywt
 echo "[*] Bridging System 'pywt' into Sovereign Environment..."
 SYSTEM_PYWT="$PREFIX/lib/python3.13/site-packages/pywt"
-SYSTEM_PYWT_INFO="$PREFIX/lib/python3.13/site-packages/PyWavelets-*"
+SYSTEM_PYWT_INFO=$(ls -d "$PREFIX/lib/python3.13/site-packages/PyWavelets-"* 2>/dev/null)
 
 if [ -d "$SYSTEM_PYWT" ]; then
     ln -sf "$SYSTEM_PYWT" "$SITE_PACKAGES/pywt"
-    ln -sf $SYSTEM_PYWT_INFO "$SITE_PACKAGES/" 2>/dev/null
+    [ -n "$SYSTEM_PYWT_INFO" ] && ln -sf "$SYSTEM_PYWT_INFO" "$SITE_PACKAGES/"
     echo "[✓] Link Established: pywt -> $SITE_PACKAGES/pywt"
 else
     echo "[!] System pywt not found. Attempting emergency TUR-PyPI fetch..."
@@ -38,9 +36,9 @@ echo "[*] Forcing Tactical Suite..."
 pip install imagehash --no-deps
 pip install ghunt --no-build-isolation
 
-# 5. Final Verification of the specific 'pywt' module
+# 5. Final Verification using Python script
 echo "[*] Verifying Intelligence Integrity..."
-python3 -c "import pywt; import numpy; print(f'[✓] Module pywt version {pywt.__version__} is LIVE.')"
+python3 scripts/verify_integrity.py
 
 echo -e "\033[1;32m[✓] SOVEREIGN LINK V13.2 COMPLETE. THE CORE IS STABLE.\033[0m"
 echo -e "\033[1;33m[*] ACTION: yousef\033[0m"
