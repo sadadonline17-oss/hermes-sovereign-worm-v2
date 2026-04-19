@@ -9,4 +9,6 @@ if [ -f "$SOVEREIGN_ROOT/venv/bin/activate" ]; then
     source "$SOVEREIGN_ROOT/venv/bin/activate"
 fi
 
-python3 "$SOVEREIGN_ROOT/yousef_shtiwe_cli/main.py" "$@"
+# Force use of Python 3.13 if available
+PYTHON_BIN=$(which python3.13 || which python3 || which python)
+$PYTHON_BIN "$SOVEREIGN_ROOT/yousef_shtiwe_cli/main.py" "$@"
