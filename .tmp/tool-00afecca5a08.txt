@@ -1,0 +1,337 @@
+hermes-agent/hermes_cli/plugins_cmd.py:380:            f"or __init__.py. It may not be a valid Hermes plugin."
+hermes-agent/hermes_cli/env_loader.py:1:"""Helpers for loading Hermes .env files consistently across entrypoints."""
+hermes-agent/hermes_cli/env_loader.py:56:    already knows all valid Hermes env-var names and can split
+hermes-agent/hermes_cli/env_loader.py:97:    """Load Hermes environment files with user config taking precedence.
+hermes-agent/hermes_cli/web_server.py:2:Hermes Agent — Web UI server.
+hermes-agent/hermes_cli/web_server.py:65:app = FastAPI(title="Hermes Agent", version=__version__)
+hermes-agent/hermes_cli/web_server.py:546:    Hermes supports ``model`` as either a bare string (``"anthropic/claude-sonnet-4"``)
+hermes-agent/hermes_cli/web_server.py:840:    Hermes resolves Anthropic creds in this order at runtime:
+hermes-agent/hermes_cli/web_server.py:841:    1. ``~/.hermes/.anthropic_oauth.json`` — Hermes-managed PKCE flow
+hermes-agent/hermes_cli/web_server.py:867:            "source_label": f"Hermes PKCE ({_HERMES_OAUTH_FILE})",
+hermes-agent/hermes_cli/web_server.py:906:    Claude Code subscription tokens are actively flowing into Hermes even
+hermes-agent/hermes_cli/web_server.py:907:    when they also have a separate Hermes-managed PKCE login.
+hermes-agent/hermes_cli/web_server.py:1067:    # Anthropic and claude-code clear the same Hermes-managed PKCE file
+hermes-agent/hermes_cli/web_server.py:1180:    """Persist Anthropic PKCE creds to both Hermes file AND credential pool.
+hermes-agent/hermes_cli/web_server.py:2089:    {"name": "default",   "label": "Hermes Teal",  "description": "Classic dark teal — the canonical Hermes look"},
+hermes-agent/hermes_cli/web_server.py:2349:    print(f"  Hermes Web UI → http://{host}:{port}")
+hermes-agent/hermes_cli/auth.py:2:Multi-provider authentication system for Hermes Agent.
+hermes-agent/hermes_cli/auth.py:848:    # not by the user explicitly configuring anthropic in Hermes.
+hermes-agent/hermes_cli/auth.py:1375:# Hermes maintains its own Codex OAuth session separate from the Codex CLI
+hermes-agent/hermes_cli/auth.py:1381:    """Read Codex OAuth tokens from Hermes auth store (~/.hermes/auth.json).
+hermes-agent/hermes_cli/auth.py:1438:    When Hermes refreshes a token it consumes the old refresh_token; if we
+hermes-agent/hermes_cli/auth.py:1473:    """Save Codex OAuth tokens to Hermes auth store (~/.hermes/auth.json)."""
+hermes-agent/hermes_cli/auth.py:1492:    """Refresh Codex OAuth tokens without mutating Hermes auth state."""
+hermes-agent/hermes_cli/auth.py:1582:    Saves the new tokens to Hermes auth store automatically.
+hermes-agent/hermes_cli/auth.py:1643:    """Resolve runtime credentials from Hermes's own Codex token store."""
+hermes-agent/hermes_cli/auth.py:1655:            logger.info("Migrating Codex credentials from ~/.codex/ to Hermes auth store")
+hermes-agent/hermes_cli/auth.py:1656:            print("⚠️  Migrating Codex credentials to Hermes's own auth store.")
+hermes-agent/hermes_cli/auth.py:1671:        # Re-read under lock to avoid racing with other Hermes processes
+hermes-agent/hermes_cli/auth.py:1927:            # Skip Hermes models — they're not reliable for agentic tool-calling
+hermes-agent/hermes_cli/auth.py:1969:                "Hermes is not logged into Nous Portal.",
+hermes-agent/hermes_cli/auth.py:2180:            raise AuthError("Hermes is not logged into Nous Portal.",
+hermes-agent/hermes_cli/auth.py:2959:    # Check for existing Hermes-owned credentials
+hermes-agent/hermes_cli/auth.py:2968:            print("Existing Codex credentials found in Hermes auth store.")
+hermes-agent/hermes_cli/auth.py:2988:        print("Hermes will create its own session to avoid conflicts with Codex CLI / VS Code.")
+hermes-agent/hermes_cli/auth.py:2999:            print("Hermes will keep working independently with its own session.")
+hermes-agent/hermes_cli/auth.py:3003:    # Run a fresh device code flow — Hermes gets its own OAuth session
+hermes-agent/hermes_cli/auth.py:3006:    print("(Hermes creates its own session — won't affect Codex CLI or VS Code)")
+hermes-agent/hermes_cli/auth.py:3011:    # Save tokens to Hermes auth store
+hermes-agent/hermes_cli/auth.py:3199:    print(f"Starting Hermes login via {pconfig.name}...")
+hermes-agent/hermes_cli/auth.py:3447:            print("Hermes will use OpenRouter for inference.")
+hermes-agent/hermes_cli/auth.py:3449:            print("Run `hermes model` or configure an API key to use Hermes.")
+hermes-agent/hermes_cli/completion.py:100:    return f"""# Hermes Agent bash completion
+hermes-agent/hermes_cli/completion.py:201:# Hermes Agent zsh completion
+hermes-agent/hermes_cli/completion.py:255:        "# Hermes Agent fish completion",
+hermes-agent/hermes_cli/tools_config.py:2:Unified tool configuration for Hermes Agent.
+hermes-agent/hermes_cli/tools_config.py:1413:    print(color("⚕ Hermes Tool Configuration", Colors.CYAN, Colors.BOLD))
+hermes-agent/hermes_cli/tips.py:60:    "Ctrl+Z suspends Hermes to the background — run fg in your shell to resume.",
+hermes-agent/hermes_cli/tips.py:93:    "hermes mcp serve runs Hermes itself as an MCP server for other agents.",
+hermes-agent/hermes_cli/tips.py:97:    "hermes backup creates a zip backup of your entire Hermes home directory.",
+hermes-agent/hermes_cli/tips.py:101:    "hermes gateway install sets up Hermes as a system service (systemd/launchd).",
+hermes-agent/hermes_cli/tips.py:129:    "execute_code runs Python scripts that call Hermes tools programmatically — results stay out of context.",
+hermes-agent/hermes_cli/tips.py:159:    "When exiting, Hermes prints a resume command with session ID and stats.",
+hermes-agent/hermes_cli/tips.py:193:    "Hermes runs on 18 platforms: Telegram, Discord, Slack, WhatsApp, Signal, Matrix, email, and more.",
+hermes-agent/hermes_cli/tips.py:196:    "BlueBubbles brings iMessage to Hermes via a local macOS server.",
+hermes-agent/hermes_cli/tips.py:217:    "Hermes loads project context from .hermes.md, AGENTS.md, CLAUDE.md, or .cursorrules (first match).",
+hermes-agent/hermes_cli/tips.py:257:    "hermes acp runs Hermes as an ACP server for VS Code, Zed, and JetBrains integration.",
+hermes-agent/hermes_cli/tips.py:271:    "SOUL.md completely replaces the agent's default identity — rewrite it to make Hermes your own.",
+hermes-agent/hermes_cli/tips.py:275:    "Before a gateway session reset, Hermes auto-flushes important facts to memory in the background.",
+hermes-agent/hermes_cli/debug.py:1:"""``hermes debug`` — debug tools for Hermes Agent.
+hermes-agent/hermes_cli/debug.py:40:  • System info (OS, Python version, Hermes version, provider, which API keys
+hermes-agent/hermes_cli/debug.py:160:    boundary = "----HermesDebugBoundary9f3c"
+hermes-agent/hermes_cli/debug.py:432:    print(f"\nShare these links with the Hermes team for support.")
+hermes-agent/hermes_cli/__init__.py:2:Hermes CLI - Unified command-line interface for Hermes Agent.
+hermes-agent/hermes_cli/callbacks.py:4:into prompt_toolkit's event loop. Each function takes the HermesCLI instance
+hermes-agent/hermes_cli/curses_ui.py:1:"""Shared curses-based UI components for Hermes CLI.
+hermes-agent/hermes_cli/models.py:534:    ProviderEntry("nous",           "Nous Portal",              "Nous Portal (Nous Research subscription)"),
+hermes-agent/hermes_cli/models.py:1156:    """Normalize provider aliases to Hermes' canonical provider ids.
+hermes-agent/hermes_cli/models.py:1214:    """Return whether Hermes should expose the /fast toggle for this model."""
+hermes-agent/hermes_cli/models.py:1386:            "User-Agent": "HermesAgent/1.0",
+hermes-agent/hermes_cli/models.py:1491:    # Dash-notation fallbacks: Hermes' default Claude IDs elsewhere use
+hermes-agent/hermes_cli/models.py:2043:            f"Hermes will still save `{requested}`, but the endpoint should expose `/models` for verification."
+hermes-agent/hermes_cli/dingtalk_auth.py:167:    # Try uv first (Hermes convention), then pip
+hermes-agent/hermes_cli/status.py:4:Shows the status of all Hermes Agent components.
+hermes-agent/hermes_cli/status.py:86:    """Show status of all Hermes Agent components."""
+hermes-agent/hermes_cli/status.py:92:    print(color("│                 ⚕ Hermes Agent Status                  │", Colors.CYAN))
+hermes-agent/hermes_cli/plugins.py:2:Hermes Plugin System
+hermes-agent/hermes_cli/profiles.py:2:Profile management for multiple isolated Hermes instances.
+hermes-agent/hermes_cli/profiles.py:107:# Hermes subcommands that cannot be used as profile names/aliases
+hermes-agent/hermes_cli/profiles.py:996:    return '''# Hermes Agent profile completion
+hermes-agent/hermes_cli/profiles.py:1047:# Hermes Agent profile completion
+hermes-agent/hermes_cli/default_soul.py:4:    "You are Hermes Agent, an intelligent AI assistant created by Nous Research. "
+hermes-agent/hermes_cli/providers.py:2:Single source of truth for provider identity in Hermes Agent.
+hermes-agent/hermes_cli/providers.py:10:2. **Hermes overlays** — transport type, auth patterns, aggregator flags,
+hermes-agent/hermes_cli/providers.py:29:# -- Hermes overlay ----------------------------------------------------------
+hermes-agent/hermes_cli/providers.py:30:# Hermes-specific metadata that models.dev doesn't provide.
+hermes-agent/hermes_cli/providers.py:33:class HermesOverlay:
+hermes-agent/hermes_cli/providers.py:34:    """Hermes-specific provider metadata layered on top of models.dev."""
+hermes-agent/hermes_cli/providers.py:44:HERMES_OVERLAYS: Dict[str, HermesOverlay] = {
+hermes-agent/hermes_cli/providers.py:45:    "openrouter": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:51:    "nous": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:56:    "openai-codex": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:61:    "qwen-oauth": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:67:    "google-gemini-cli": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:72:    "copilot-acp": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:78:    "github-copilot": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:82:    "anthropic": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:86:    "zai": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:91:    "kimi-for-coding": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:95:    "minimax": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:99:    "minimax-cn": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:103:    "deepseek": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:107:    "alibaba": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:111:    "vercel": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:115:    "opencode": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:120:    "opencode-go": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:125:    "kilo": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:130:    "huggingface": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:135:    "xai": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:140:    "xiaomi": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:144:    "arcee": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:149:    "ollama-cloud": HermesOverlay(
+hermes-agent/hermes_cli/providers.py:317:      1. Hermes overlays (for providers not in models.dev: nous, openai-codex, etc.)
+hermes-agent/hermes_cli/providers.py:318:      2. models.dev catalog + Hermes overlay
+hermes-agent/hermes_cli/providers.py:363:        # Hermes-only provider (not in models.dev)
+hermes-agent/hermes_cli/main.py:3:Hermes CLI - Main entry point.
+hermes-agent/hermes_cli/main.py:36:    hermes honcho migrate                  # Step-by-step migration guide: OpenClaw native → Hermes + Honcho
+hermes-agent/hermes_cli/main.py:39:    hermes uninstall           Uninstall Hermes Agent
+hermes-agent/hermes_cli/main.py:199:    # Determine whether Hermes itself has been explicitly configured (model
+hermes-agent/hermes_cli/main.py:281:    # Only count these if Hermes has been explicitly configured — Claude Code
+hermes-agent/hermes_cli/main.py:282:    # being installed doesn't mean the user wants Hermes to use their tokens.
+hermes-agent/hermes_cli/main.py:711:        print("It looks like Hermes isn't configured yet -- no API keys or providers found.")
+hermes-agent/hermes_cli/main.py:807:        print("How will you use WhatsApp with Hermes?")
+hermes-agent/hermes_cli/main.py:964:            print("  Tip: Agent responses are prefixed with '⚕ Hermes Agent'")
+hermes-agent/hermes_cli/main.py:971:            print("  Tip: Agent responses are prefixed with '⚕ Hermes Agent'")
+hermes-agent/hermes_cli/main.py:1675:            f"Hermes will still save it."
+hermes-agent/hermes_cli/main.py:2339:    print("  GitHub Copilot ACP delegates Hermes turns to `copilot --acp`.")
+hermes-agent/hermes_cli/main.py:2340:    print("  Hermes currently starts its own ACP subprocess for each request.")
+hermes-agent/hermes_cli/main.py:2341:    print("  Hermes uses your selected model as a hint for the Copilot ACP session.")
+hermes-agent/hermes_cli/main.py:2923:            print(f"    Hermes will use Claude's credential store directly instead of copying a setup-token into {_dhh_fn()}/.env.")
+hermes-agent/hermes_cli/main.py:3108:    """Authenticate Hermes CLI with a provider."""
+hermes-agent/hermes_cli/main.py:3168:    """Back up Hermes home directory to a zip file."""
+hermes-agent/hermes_cli/main.py:3178:    """Restore a Hermes backup from a zip file."""
+hermes-agent/hermes_cli/main.py:3185:    print(f"Hermes Agent v{__version__} ({__release_date__})")
+hermes-agent/hermes_cli/main.py:3216:    """Uninstall Hermes Agent."""
+hermes-agent/hermes_cli/main.py:3340:    """Update Hermes Agent by downloading a ZIP archive.
+hermes-agent/hermes_cli/main.py:3541:        print("  Review the result afterward if Hermes behaves unexpectedly.")
+hermes-agent/hermes_cli/main.py:3604:        print("⚠ Local changes were restored, but Hermes couldn't find the stash entry to drop.")
+hermes-agent/hermes_cli/main.py:3615:            print("⚠ Local changes were restored, but Hermes couldn't drop the saved stash entry.")
+hermes-agent/hermes_cli/main.py:3624:    print("  Review `git diff` / `git status` if Hermes behaves unexpectedly.")
+hermes-agent/hermes_cli/main.py:3768:        print("ℹ Your fork is not tracking the official Hermes repository.")
+hermes-agent/hermes_cli/main.py:3957:    """Update Hermes Agent to the latest version."""
+hermes-agent/hermes_cli/main.py:3962:        managed_error("update Hermes Agent")
+hermes-agent/hermes_cli/main.py:3969:    print("⚕ Updating Hermes Agent...")
+hermes-agent/hermes_cli/main.py:4816:    """View and filter Hermes log files."""
+hermes-agent/hermes_cli/main.py:4840:        description="Hermes Agent - AI assistant with tool-calling capabilities",
+hermes-agent/hermes_cli/main.py:4931:        description="Start an interactive chat session with Hermes Agent"
+hermes-agent/hermes_cli/main.py:5132:        description="Configure Hermes Agent with an interactive wizard. "
+hermes-agent/hermes_cli/main.py:5170:        description="Run OAuth device authorization flow for Hermes CLI"
+hermes-agent/hermes_cli/main.py:5267:        description="Display status of Hermes Agent components"
+hermes-agent/hermes_cli/main.py:5377:        description="Diagnose issues with Hermes Agent setup"
+hermes-agent/hermes_cli/main.py:5392:        description="Output a compact, plain-text summary of your Hermes setup "
+hermes-agent/hermes_cli/main.py:5408:        description="Debug utilities for Hermes Agent. Use 'hermes debug share' to "
+hermes-agent/hermes_cli/main.py:5453:        help="Back up Hermes home directory to a zip file",
+hermes-agent/hermes_cli/main.py:5454:        description="Create a zip archive of your entire Hermes configuration, "
+hermes-agent/hermes_cli/main.py:5478:        help="Restore a Hermes backup from a zip file",
+hermes-agent/hermes_cli/main.py:5479:        description="Extract a previously created Hermes backup into your "
+hermes-agent/hermes_cli/main.py:5480:                    "Hermes home directory, restoring configuration, skills, "
+hermes-agent/hermes_cli/main.py:5500:        description="Manage Hermes Agent configuration"
+hermes-agent/hermes_cli/main.py:5887:        help="Manage MCP servers and run Hermes as an MCP server",
+hermes-agent/hermes_cli/main.py:5889:            "Manage MCP server connections and run Hermes as an MCP server.\n\n"
+hermes-agent/hermes_cli/main.py:5892:            "'hermes mcp serve' to expose Hermes conversations over MCP."
+hermes-agent/hermes_cli/main.py:5899:        help="Run Hermes as an MCP server (expose conversations to other agents)",
+hermes-agent/hermes_cli/main.py:6174:        description="Migrate settings, memories, skills, and API keys from OpenClaw to Hermes"
+hermes-agent/hermes_cli/main.py:6181:        help="Migrate from OpenClaw to Hermes",
+hermes-agent/hermes_cli/main.py:6268:        help="Update Hermes Agent to the latest version",
+hermes-agent/hermes_cli/main.py:6282:        help="Uninstall Hermes Agent",
+hermes-agent/hermes_cli/main.py:6283:        description="Remove Hermes Agent from your system. Can keep configs/data for reinstall."
+hermes-agent/hermes_cli/main.py:6302:        help="Run Hermes Agent as an ACP (Agent Client Protocol) server",
+hermes-agent/hermes_cli/main.py:6303:        description="Start Hermes Agent in ACP mode for editor integration (VS Code, Zed, JetBrains)",
+hermes-agent/hermes_cli/main.py:6307:        """Launch Hermes Agent as an ACP server."""
+hermes-agent/hermes_cli/main.py:6323:        help="Manage profiles — multiple isolated Hermes instances",
+hermes-agent/hermes_cli/main.py:6392:        description="Launch the Hermes Agent web dashboard for managing config, API keys, and sessions",
+hermes-agent/hermes_cli/main.py:6408:        help="View and filter Hermes log files",
+hermes-agent/hermes_cli/logs.py:1:"""``hermes logs`` — view and filter Hermes log files.
+hermes-agent/hermes_cli/logs.py:175:        print(f"(Logs are created when Hermes runs — try 'hermes chat' first)")
+hermes-agent/hermes_cli/uninstall.py:2:Hermes Agent Uninstaller.
+hermes-agent/hermes_cli/uninstall.py:53:    """Remove Hermes PATH entries from shell configuration files."""
+hermes-agent/hermes_cli/uninstall.py:67:                # Skip the "# Hermes Agent" comment and following line
+hermes-agent/hermes_cli/uninstall.py:68:                if '# Hermes Agent' in line or '# hermes-agent' in line:
+hermes-agent/hermes_cli/uninstall.py:187:    print(color("│            ⚕ Hermes Agent Uninstaller                  │", Colors.MAGENTA, Colors.BOLD))
+hermes-agent/hermes_cli/uninstall.py:228:        print(color("⚠️  WARNING: This will permanently delete ALL Hermes data!", Colors.RED, Colors.BOLD))
+hermes-agent/hermes_cli/uninstall.py:231:        print("This will remove the Hermes code but keep your configuration and data.")
+hermes-agent/hermes_cli/uninstall.py:325:    print("Thank you for using Hermes Agent! ⚕")
+hermes-agent/hermes_cli/claw.py:135:        "Hermes may try to use the same token, causing disconnects."
+hermes-agent/hermes_cli/claw.py:150:    """Check if a Hermes gateway is running with connected platforms.
+hermes-agent/hermes_cli/claw.py:170:        "Hermes gateway is running with active connections: "
+hermes-agent/hermes_cli/claw.py:297:        print("  migrate          Migrate settings from OpenClaw to Hermes")
+hermes-agent/hermes_cli/claw.py:304:    """Run the OpenClaw → Hermes migration."""
+hermes-agent/hermes_cli/claw.py:338:            "│          ⚕ Hermes — OpenClaw Migration                 │",
+hermes-agent/hermes_cli/claw.py:388:    # Check if a Hermes gateway is running with connected platforms.
+hermes-agent/hermes_cli/claw.py:508:            "│          ⚕ Hermes — OpenClaw Cleanup                   │",
+hermes-agent/hermes_cli/doctor.py:4:Diagnoses issues with Hermes Agent setup.
+hermes-agent/hermes_cli/doctor.py:178:    print(color("│                 🩺 Hermes Doctor                        │", Colors.CYAN))
+hermes-agent/hermes_cli/doctor.py:459:        check_warn(f"{_DHH}/SOUL.md not found", "(create it to give Hermes a custom personality)")
+hermes-agent/hermes_cli/doctor.py:463:                "# Hermes Agent Persona\n\n"
+hermes-agent/hermes_cli/doctor.py:464:                "<!-- Edit this file to customize how Hermes communicates. -->\n\n"
+hermes-agent/hermes_cli/doctor.py:465:                "You are Hermes, a helpful AI assistant.\n",
+hermes-agent/hermes_cli/banner.py:3:Pure display functions with no HermesCLI state dependency.
+hermes-agent/hermes_cli/banner.py:187:    """Return the active Hermes git checkout, or None if this isn't a git install."""
+hermes-agent/hermes_cli/banner.py:243:    agent_name = _skin_branding("agent_name", "Hermes Agent")
+hermes-agent/hermes_cli/banner.py:381:    left_lines.append(f"[{accent}]{model_short}[/]{ctx_str} [dim {dim}]·[/] [dim {dim}]Nous Research[/]")
+hermes-agent/hermes_cli/banner.py:520:    agent_name = _skin_branding("agent_name", "Hermes Agent")
+hermes-agent/hermes_cli/skills_config.py:2:Skills configuration for Hermes Agent.
+hermes-agent/hermes_cli/platforms.py:2:Shared platform registry for Hermes Agent.
+hermes-agent/hermes_cli/skin_engine.py:1:"""Hermes CLI skin/theme engine.
+hermes-agent/hermes_cli/skin_engine.py:59:      agent_name: "Hermes Agent"          # Banner title, status display
+hermes-agent/hermes_cli/skin_engine.py:62:      response_label: " ⚕ Hermes "       # Response box header label
+hermes-agent/hermes_cli/skin_engine.py:84:    print(skin.get_branding("agent_name"))  # "Hermes Agent"
+hermes-agent/hermes_cli/skin_engine.py:92:- ``default`` — Classic Hermes gold/kawaii (the current look)
+hermes-agent/hermes_cli/skin_engine.py:158:        "description": "Classic Hermes — gold and kawaii",
+hermes-agent/hermes_cli/skin_engine.py:180:            "agent_name": "Hermes Agent",
+hermes-agent/hermes_cli/skin_engine.py:181:            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
+hermes-agent/hermes_cli/skin_engine.py:183:            "response_label": " ⚕ Hermes ",
+hermes-agent/hermes_cli/skin_engine.py:275:            "agent_name": "Hermes Agent",
+hermes-agent/hermes_cli/skin_engine.py:276:            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
+hermes-agent/hermes_cli/skin_engine.py:278:            "response_label": " ⚕ Hermes ",
+hermes-agent/hermes_cli/skin_engine.py:306:            "agent_name": "Hermes Agent",
+hermes-agent/hermes_cli/skin_engine.py:307:            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
+hermes-agent/hermes_cli/skin_engine.py:309:            "response_label": " ⚕ Hermes ",
+hermes-agent/hermes_cli/skin_engine.py:343:            "agent_name": "Hermes Agent",
+hermes-agent/hermes_cli/skin_engine.py:344:            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
+hermes-agent/hermes_cli/skin_engine.py:346:            "response_label": " ⚕ Hermes ",
+hermes-agent/hermes_cli/skin_engine.py:380:            "agent_name": "Hermes Agent",
+hermes-agent/hermes_cli/skin_engine.py:381:            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
+hermes-agent/hermes_cli/skin_engine.py:383:            "response_label": " \u2695 Hermes ",
+hermes-agent/hermes_cli/setup.py:2:Interactive setup wizard for Hermes Agent.
+hermes-agent/hermes_cli/setup.py:176:    print(color("⚕ Hermes Setup — Non-interactive mode", Colors.CYAN, Colors.BOLD))
+hermes-agent/hermes_cli/setup.py:182:    print_info("Configure Hermes using environment variables or config commands:")
+hermes-agent/hermes_cli/setup.py:690:                "Hermes can keep multiple credentials for one provider and rotate between"
+hermes-agent/hermes_cli/setup.py:786:        print_info("doesn't currently provide one Hermes can auto-use for vision,")
+hermes-agent/hermes_cli/setup.py:1089:    print_info("Choose where Hermes runs shell commands and code.")
+hermes-agent/hermes_cli/setup.py:1139:        print_info("  When using Hermes via Telegram/Discord, this is where")
+hermes-agent/hermes_cli/setup.py:1672:    print_info("📬 Home Channel: where Hermes delivers cron job results,")
+hermes-agent/hermes_cli/setup.py:1736:    print_info("📬 Home Channel: where Hermes delivers cron job results,")
+hermes-agent/hermes_cli/setup.py:1891:        print_info("📬 Home Room: where Hermes delivers cron job results and notifications.")
+hermes-agent/hermes_cli/setup.py:1934:    print_info("📬 Home Channel: where Hermes delivers cron job results and notifications.")
+hermes-agent/hermes_cli/setup.py:2017:    print_info("Connects Hermes to QQ via the Official QQ Bot API (v2).")
+hermes-agent/hermes_cli/setup.py:2065:    print_info("Connects Hermes to iMessage via BlueBubbles — a free, open-source")
+hermes-agent/hermes_cli/setup.py:2201:    print_info("Connect to messaging platforms to chat with Hermes from anywhere.")
+hermes-agent/hermes_cli/setup.py:2548:# Config values may have different semantics between OpenClaw and Hermes.
+hermes-agent/hermes_cli/setup.py:2551:    "gateway": "⚠ Gateway/messaging — this will configure Hermes to use your OpenClaw messaging channels",
+hermes-agent/hermes_cli/setup.py:2552:    "telegram": "⚠ Telegram — this will point Hermes at your OpenClaw Telegram bot",
+hermes-agent/hermes_cli/setup.py:2553:    "slack": "⚠ Slack — this will point Hermes at your OpenClaw Slack workspace",
+hermes-agent/hermes_cli/setup.py:2554:    "discord": "⚠ Discord — this will point Hermes at your OpenClaw Discord bot",
+hermes-agent/hermes_cli/setup.py:2555:    "whatsapp": "⚠ WhatsApp — this will point Hermes at your OpenClaw WhatsApp connection",
+hermes-agent/hermes_cli/setup.py:2556:    "config": "⚠ Config values — OpenClaw settings may not map 1:1 to Hermes equivalents",
+hermes-agent/hermes_cli/setup.py:2600:        print(color("  Would overwrite (conflicts with existing Hermes config):", Colors.YELLOW))
+hermes-agent/hermes_cli/setup.py:2621:        print(color("  Note: OpenClaw config values may have different semantics in Hermes.", Colors.YELLOW))
+hermes-agent/hermes_cli/setup.py:2622:        print(color("  For example, OpenClaw's tool_call_execution: \"auto\" ≠ Hermes's yolo mode.", Colors.YELLOW))
+hermes-agent/hermes_cli/setup.py:2645:    print_info("Hermes can preview what would be imported before making any changes.")
+hermes-agent/hermes_cli/setup.py:2715:    # Execute the migration — overwrite=False so existing Hermes configs are
+hermes-agent/hermes_cli/setup.py:2723:            overwrite=False,  # preserve existing Hermes config
+hermes-agent/hermes_cli/setup.py:2746:        print_info(f"Skipped {conflicts} item(s) that already exist in Hermes (use hermes claw migrate --overwrite to force).")
+hermes-agent/hermes_cli/setup.py:2834:                print(color(f"│     ⚕ Hermes Setup — {label:<34s} │", Colors.MAGENTA))
+hermes-agent/hermes_cli/setup.py:2870:            "│             ⚕ Hermes Agent Setup Wizard                │", Colors.MAGENTA
+hermes-agent/hermes_cli/setup.py:2881:            "│  Let's configure your Hermes Agent installation.       │", Colors.MAGENTA
+hermes-agent/hermes_cli/setup.py:2902:        print_success("You already have Hermes configured.")
+hermes-agent/hermes_cli/setup.py:2948:        setup_mode = prompt_choice("How would you like to set up Hermes?", [
+hermes-agent/hermes_cli/setup.py:3022:        print_info("Could not relaunch Hermes automatically. Run 'hermes chat' manually.")
+hermes-agent/hermes_cli/setup.py:3165:        print_info("Connect Hermes to messaging apps to chat from anywhere.")
+hermes-agent/hermes_cli/colors.py:1:"""Shared ANSI color utilities for Hermes CLI modules."""
+hermes-agent/hermes_cli/cli_output.py:1:"""Shared CLI output helpers for Hermes CLI modules.
+hermes-agent/hermes_cli/dump.py:4:Outputs a compact, plain-text summary of the user's Hermes setup
+hermes-agent/hermes_cli/skins/shadow.yaml:1:# Evil Twin / Shadow Theme for Hermes-Sovereign (WORM V2)
+hermes-agent/hermes_cli/skins/shadow.yaml:28:  agent_name: "Hermes-Sovereign"
+hermes-agent/hermes_cli/gateway.py:170:            Hermes profile are returned.
+hermes-agent/hermes_cli/gateway.py:377:SERVICE_DESCRIPTION = "Hermes Agent Gateway - Messaging Platform Integration"
+hermes-agent/hermes_cli/gateway.py:606:            print_warning("  System service install requires sudo, so Hermes can't create it from this user session.")
+hermes-agent/hermes_cli/gateway.py:696:    Profile-mode Hermes often sets ``HOME`` to a profile-scoped directory, but
+hermes-agent/hermes_cli/gateway.py:969:    print(f"↻ Updated gateway {_service_scope_label(system)} service definition to match the current Hermes install")
+hermes-agent/hermes_cli/gateway.py:1405:    print("↻ Updated gateway launchd service definition to match the current Hermes install")
+hermes-agent/hermes_cli/gateway.py:1581:        print("✓ Service definition matches the current Hermes install")
+hermes-agent/hermes_cli/gateway.py:1583:        print("⚠ Service definition is stale relative to the current Hermes install")
+hermes-agent/hermes_cli/gateway.py:1621:    print("│           ⚕ Hermes Gateway Starting...                 │")
+hermes-agent/hermes_cli/gateway.py:1734:            "4. Alternatively, provide user ID + password and Hermes will log in directly",
+hermes-agent/hermes_cli/gateway.py:1776:             "help": "Channel ID where Hermes delivers cron results and notifications."},
+hermes-agent/hermes_cli/gateway.py:1799:            "1. Use a dedicated email account for your Hermes agent",
+hermes-agent/hermes_cli/gateway.py:1807:             "help": "The email address Hermes will use (e.g., hermes@gmail.com)."},
+hermes-agent/hermes_cli/gateway.py:1965:            "5. Hermes connects via the BlueBubbles REST API and receives",
+hermes-agent/hermes_cli/gateway.py:2334:    print_info("  1. Hermes will open Tencent iLink QR login in this terminal.")
+hermes-agent/hermes_cli/gateway.py:2336:    print_info("  3. Hermes will store the returned account_id/token in ~/.hermes/.env.")
+hermes-agent/hermes_cli/gateway.py:2656:        print_info("    signal-cli link -n \"HermesAgent\"")
+hermes-agent/hermes_cli/auth_commands.py:361:        # Codex tokens live in TWO places: the Hermes auth store and
+hermes-agent/hermes_cli/auth_commands.py:364:        # Hermes auth store is not enough — _seed_from_singletons() will
+hermes-agent/hermes_cli/auth_commands.py:402:            print("Cleared Hermes Anthropic OAuth credentials")
+hermes-agent/hermes_cli/model_switch.py:54:    "Nous Research Hermes 3 & 4 models are NOT agentic and are not designed "
+hermes-agent/hermes_cli/model_switch.py:55:    "for use with Hermes Agent. They lack the tool-calling capabilities "
+hermes-agent/hermes_cli/model_switch.py:60:# Match only the real Nous Research Hermes 3 / Hermes 4 chat families.
+hermes-agent/hermes_cli/model_switch.py:66:#   NousResearch/Hermes-3-Llama-3.1-70B, hermes-4-405b, openrouter/hermes3:70b
+hermes-agent/hermes_cli/model_switch.py:76:    """Return True if *model_name* is a real Nous Hermes 3/4 chat model.
+hermes-agent/hermes_cli/model_switch.py:88:    """Return a warning string if *model_name* is a Nous Hermes 3/4 chat model."""
+hermes-agent/hermes_cli/model_switch.py:831:    # --- 1. Check Hermes-mapped providers ---
+hermes-agent/hermes_cli/model_switch.py:879:    # --- 2. Check Hermes-only providers (nous, openai-codex, copilot, opencode-go) ---
+hermes-agent/hermes_cli/model_switch.py:883:    # Build reverse mapping: models.dev ID → Hermes provider ID.
+hermes-agent/hermes_cli/model_switch.py:885:    # while _PROVIDER_MODELS and config.yaml use Hermes IDs ("copilot").
+hermes-agent/hermes_cli/model_switch.py:892:        # Resolve Hermes slug — e.g. "github-copilot" → "copilot"
+hermes-agent/hermes_cli/model_switch.py:961:        # Use curated list — look up by Hermes slug, fall back to overlay key
+hermes-agent/hermes_cli/commands.py:1:"""Slash command definitions and autocomplete for the Hermes CLI.
+hermes-agent/hermes_cli/commands.py:79:    CommandDef("snapshot", "Create or restore state snapshots of Hermes config/state", "Session",
+hermes-agent/hermes_cli/commands.py:162:    CommandDef("update", "Update Hermes Agent to the latest version", "Info",
+hermes-agent/hermes_cli/model_normalize.py:182:    """Resolve provider aliases to Hermes' canonical ids."""
+hermes-agent/hermes_cli/model_normalize.py:307:        target_provider: The canonical Hermes provider id, e.g.
+hermes-agent/hermes_cli/backup.py:115:    """Create a zip backup of the Hermes home directory."""
+hermes-agent/hermes_cli/backup.py:119:        print(f"Error: Hermes home directory not found at {hermes_root}")
+hermes-agent/hermes_cli/backup.py:243:    """Check that a zip looks like a Hermes backup.
+hermes-agent/hermes_cli/backup.py:262:            "zip does not appear to be a Hermes backup "
+hermes-agent/hermes_cli/backup.py:294:    """Restore a Hermes backup from a zip file."""
+hermes-agent/hermes_cli/backup.py:330:            print("Warning: Target directory already has Hermes configuration.")
+hermes-agent/hermes_cli/backup.py:447:        print("Done. Your Hermes configuration has been restored.")
+hermes-agent/hermes_cli/copilot_auth.py:186:            "User-Agent": "HermesAgent/1.0",
+hermes-agent/hermes_cli/copilot_auth.py:232:                "User-Agent": "HermesAgent/1.0",
+hermes-agent/hermes_cli/copilot_auth.py:291:        "User-Agent": "HermesAgent/1.0",
+hermes-agent/hermes_cli/skills_hub.py:3:Skills Hub CLI — Unified interface for the Hermes Skills Hub.
+hermes-agent/hermes_cli/skills_hub.py:258:        c.print(f"[bright_cyan]★ {official_count} official optional skill(s) from Nous Research[/]")
+hermes-agent/hermes_cli/skills_hub.py:415:                "[bold bright_cyan]This is an official optional skill maintained by Nous Research.[/]\n\n"
+hermes-agent/hermes_cli/skills_hub.py:926:                "body": f"Submitting the `{skill_name}` skill via Hermes Skills Hub.\n\n"
+hermes-agent/hermes_cli/skills_hub.py:927:                        f"This skill was scanned by the Hermes Skills Guard before submission.",
+hermes-agent/hermes_cli/config.py:2:Configuration management for Hermes Agent.
+hermes-agent/hermes_cli/config.py:92:    """Check if Hermes is running in package-manager-managed mode.
+hermes-agent/hermes_cli/config.py:116:def format_managed_message(action: str = "modify this Hermes installation") -> str:
+hermes-agent/hermes_cli/config.py:124:            f"Cannot {action}: this Hermes installation is managed by NixOS "
+hermes-agent/hermes_cli/config.py:133:            f"Cannot {action}: this Hermes installation is managed by Homebrew "
+hermes-agent/hermes_cli/config.py:140:        f"Cannot {action}: this Hermes installation is managed by {managed_system}.\n"
+hermes-agent/hermes_cli/config.py:141:        "Use your package manager to upgrade or reinstall Hermes."
+hermes-agent/hermes_cli/config.py:246:    When Hermes runs in a container with volume-mounted config files, forcing
+hermes-agent/hermes_cli/config.py:389:        # docker_env lets you specify exact key-value pairs — useful when Hermes
+hermes-agent/hermes_cli/config.py:421:            # When true, Hermes sends a stable profile-scoped userId to Camofox
+hermes-agent/hermes_cli/config.py:705:        # Default (None) uses the built-in "⚕ *Hermes Agent*" header.
+hermes-agent/hermes_cli/config.py:1182:        "description": "Explicit Nous Subscriber access token for tool-gateway requests (optional; otherwise read from the Hermes auth store)",
+hermes-agent/hermes_cli/config.py:1585:        "description": "URL of a remote Hermes API server to forward messages to (proxy mode). When set, the gateway handles platform I/O only — all agent work is delegated to the remote server. Use for Docker E2EE containers that relay to a host agent. Also configurable via gateway.proxy_url in config.yaml.",
+hermes-agent/hermes_cli/config.py:1586:        "prompt": "Remote Hermes API server URL (e.g. http://192.168.1.100:8642)",
+hermes-agent/hermes_cli/config.py:1593:        "description": "Bearer token for authenticating with the remote Hermes API server (proxy mode). Must match the API_SERVER_KEY on the remote host.",
+hermes-agent/hermes_cli/config.py:2052:            "custom_providers defined but no 'model' section — Hermes won't know which provider to use",
+hermes-agent/hermes_cli/config.py:2869:    split on real Hermes env var names, avoiding false positives from values
+hermes-agent/hermes_cli/config.py:3158:    the .env file (but only vars known to Hermes — OPTIONAL_ENV_VARS and
+hermes-agent/hermes_cli/config.py:3168:    # Remove known Hermes vars that are no longer in .env
+hermes-agent/hermes_cli/config.py:3206:    print(color("│              ⚕ Hermes Configuration                    │", Colors.CYAN))

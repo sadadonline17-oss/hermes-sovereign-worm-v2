@@ -1,0 +1,26 @@
+2026-04-17 22:01:25,463 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:01:26,823 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-04-17 22:05:03,272 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:08:37,398 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:08:51,580 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:09:13,909 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:10:47,580 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:21:26,235 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:22:57,999 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:24:58,429 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:27:56,175 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:32:22,252 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:32:34,674 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:45:27,188 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:47:13,405 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:49:01,808 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:49:30,997 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:49:31,880 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
+2026-04-17 22:55:56,994 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:55:57,904 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
+2026-04-17 22:56:11,600 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 22:56:12,539 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
+2026-04-17 23:32:34,234 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 23:43:11,981 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 23:49:29,774 INFO run_agent: No .env file found. Using system environment variables.
+2026-04-17 23:49:32,983 INFO run_agent: No .env file found. Using system environment variables.

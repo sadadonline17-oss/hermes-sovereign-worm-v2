@@ -1,0 +1,1728 @@
+Exit Code: 0
+Successfully patched hermes-agent/hermes_cli/banner.py imports.
+./hermes-agent/trajectory_compressor.py:from hermes_constants import OPENROUTER_BASE_URL, get_hermes_home
+./hermes-agent/trajectory_compressor.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/rl_cli.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/rl_cli.py:from hermes_constants import get_hermes_home, OPENROUTER_BASE_URL
+./hermes-agent/run_agent.py:from hermes_constants import get_hermes_home
+./hermes-agent/run_agent.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/run_agent.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/run_agent.py:            from hermes_cli.model_normalize import (
+./hermes-agent/run_agent.py:        from hermes_logging import setup_logging, setup_verbose_logging
+./hermes-agent/run_agent.py:                from hermes_cli.config import load_config as _load_br_cfg
+./hermes-agent/run_agent.py:                    from hermes_cli.models import copilot_default_headers
+./hermes-agent/run_agent.py:                            from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/run_agent.py:            from hermes_cli.config import load_config as _load_agent_config
+./hermes-agent/run_agent.py:                                from hermes_cli.config import load_config as _lc, save_config as _sc
+./hermes-agent/run_agent.py:                        from hermes_constants import get_hermes_home as _ghh
+./hermes-agent/run_agent.py:                            from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/run_agent.py:                from hermes_cli.config import get_compatible_custom_providers
+./hermes-agent/run_agent.py:                    from hermes_cli.plugins import get_plugin_context_engine
+./hermes-agent/run_agent.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/run_agent.py:                from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/run_agent.py:        from hermes_time import now as _hermes_now
+./hermes-agent/run_agent.py:            from hermes_cli.auth import resolve_codex_runtime_credentials
+./hermes-agent/run_agent.py:            from hermes_cli.auth import resolve_nous_runtime_credentials
+./hermes-agent/run_agent.py:            from hermes_cli.models import copilot_default_headers
+./hermes-agent/run_agent.py:                from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/run_agent.py:                from hermes_cli.models import github_model_reasoning_efforts
+./hermes-agent/run_agent.py:            from hermes_cli.models import github_model_reasoning_efforts
+./hermes-agent/run_agent.py:            from hermes_cli.plugins import get_pre_tool_call_block_message
+./hermes-agent/run_agent.py:                from hermes_cli.plugins import get_pre_tool_call_block_message
+./hermes-agent/run_agent.py:        from hermes_logging import set_session_context
+./hermes-agent/run_agent.py:                    from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/run_agent.py:            from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/run_agent.py:                        from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/run_agent.py:                        from hermes_constants import display_hermes_home as _dhh_fn
+./hermes-agent/run_agent.py:                    from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/run_agent.py:                from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/run_agent.py:            from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/plugins/memory/mem0/__init__.py:    from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/holographic/store.py:            from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/holographic/__init__.py:    from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/holographic/__init__.py:        from hermes_constants import display_hermes_home
+./hermes-agent/plugins/memory/holographic/__init__.py:        from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/__init__.py:        from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/__init__.py:        from hermes_cli.config import load_config
+./hermes-agent/plugins/memory/retaindb/__init__.py:        from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/byterover/__init__.py:    from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/supermemory/__init__.py:        from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/honcho/client.py:from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/honcho/client.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/plugins/memory/honcho/client.py:            from hermes_cli.config import load_config
+./hermes-agent/plugins/memory/honcho/__init__.py:                from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/honcho/cli.py:from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.profiles import list_profiles
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.profiles import list_profiles
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.config import load_config, save_config
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.profiles import list_profiles
+./hermes-agent/plugins/memory/honcho/cli.py:        from hermes_cli.memory_setup import cmd_setup_provider
+./hermes-agent/plugins/memory/hindsight/__init__.py:from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/hindsight/__init__.py:from hermes_constants import get_hermes_home
+./hermes-agent/plugins/memory/hindsight/__init__.py:        from hermes_cli.config import save_config
+./hermes-agent/plugins/memory/hindsight/__init__.py:        from hermes_cli.memory_setup import _curses_select
+./hermes-agent/tools/browser_tool.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/browser_tool.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/browser_tool.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/browser_tool.py:from hermes_constants import is_termux as _is_termux_environment
+./hermes-agent/tools/browser_tool.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/browser_tool.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/browser_tool.py:    from hermes_constants import get_hermes_dir
+./hermes-agent/tools/browser_tool.py:            from hermes_cli.config import load_config
+./hermes-agent/tools/skill_manager_tool.py:from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/tools/voice_mode.py:from hermes_constants import is_termux as _is_termux_environment
+./hermes-agent/tools/voice_mode.py:    from hermes_constants import is_container
+./hermes-agent/tools/xai_http.py:        from hermes_cli import __version__
+./hermes-agent/tools/managed_tool_gateway.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/managed_tool_gateway.py:        from hermes_cli.auth import resolve_nous_access_token
+./hermes-agent/tools/memory_tool.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/debug_helpers.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/process_registry.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/tools/web_tools.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/tts_tool.py:from hermes_constants import display_hermes_home
+./hermes-agent/tools/tts_tool.py:    from hermes_constants import get_hermes_dir
+./hermes-agent/tools/tts_tool.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/terminal_tool.py:            from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/tools/terminal_tool.py:    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/tools/credential_files.py:    from hermes_constants import get_hermes_home
+./hermes-agent/tools/credential_files.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/credential_files.py:    from hermes_constants import get_hermes_dir
+./hermes-agent/tools/credential_files.py:    from hermes_constants import get_hermes_dir
+./hermes-agent/tools/mcp_oauth.py:        from hermes_constants import get_hermes_home
+./hermes-agent/tools/checkpoint_manager.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/session_search_tool.py:        from hermes_state import DEFAULT_DB_PATH
+./hermes-agent/tools/tirith_security.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/tirith_security.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/skills_sync.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/vision_tools.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/vision_tools.py:            from hermes_cli.config import load_config
+./hermes-agent/tools/image_generation_tool.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/tool_backend_helpers.py:        from hermes_cli.auth import get_nous_auth_status
+./hermes-agent/tools/tool_backend_helpers.py:        from hermes_cli.models import check_nous_free_tier
+./hermes-agent/tools/tool_backend_helpers.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/website_policy.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/browser_camofox.py:from hermes_cli.config import load_config
+./hermes-agent/tools/browser_camofox.py:        from hermes_constants import get_hermes_home
+./hermes-agent/tools/browser_camofox.py:            from hermes_cli.config import load_config
+./hermes-agent/tools/transcription_tools.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/delegate_tool.py:            from hermes_constants import parse_reasoning_effort
+./hermes-agent/tools/delegate_tool.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tools/delegate_tool.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/environments/modal.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/environments/base.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/environments/docker.py:        from hermes_cli.config import load_env
+./hermes-agent/tools/environments/local.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tools/environments/local.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tools/environments/local.py:    from hermes_constants import get_subprocess_home
+./hermes-agent/tools/environments/local.py:    from hermes_constants import get_subprocess_home
+./hermes-agent/tools/environments/singularity.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/environments/file_sync.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/mcp_tool.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/mcp_tool.py:            from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/tools/cronjob_tools.py:from hermes_constants import display_hermes_home
+./hermes-agent/tools/cronjob_tools.py:            from hermes_cli.config import load_config
+./hermes-agent/tools/cronjob_tools.py:    from hermes_constants import get_hermes_home
+./hermes-agent/tools/file_operations.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/code_execution_tool.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tools/code_execution_tool.py:        f"Available via `from hermes_tools import ...`:\n\n"
+./hermes-agent/tools/code_execution_tool.py:                        f"`from hermes_tools import {import_str}` "
+./hermes-agent/tools/skills_tool.py:from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/tools/skills_tool.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/skills_tool.py:    from hermes_cli.plugins import _get_disabled_plugins, get_plugin_manager
+./hermes-agent/tools/skills_tool.py:            from hermes_cli.plugins import discover_plugins, get_plugin_manager
+./hermes-agent/tools/browser_camofox_state.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/env_passthrough.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tools/rl_training_tool.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/file_tools.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/file_tools.py:        from hermes_constants import get_hermes_home as _get_hh
+./hermes-agent/tools/approval.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/approval.py:        from hermes_cli.config import load_config, save_config
+./hermes-agent/tools/approval.py:        from hermes_cli.config import load_config
+./hermes-agent/tools/skills_hub.py:from hermes_constants import get_hermes_home
+./hermes-agent/tools/skills_hub.py:        from hermes_constants import get_optional_skills_dir
+./hermes-agent/hermes_time.py:from hermes_constants import get_config_path
+./hermes-agent/tests/test_empty_model_fallback.py:        from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/tests/test_empty_model_fallback.py:        from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/tests/test_empty_model_fallback.py:        from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/tests/test_empty_model_fallback.py:        from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/tests/tools/test_browser_camofox_state.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/tools/test_browser_camofox_state.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/tools/test_send_message_tool.py:                    "hello from hermes",
+./hermes-agent/tests/tools/test_send_message_tool.py:        async_mock.assert_awaited_once_with({"bridge_port": 3000}, chat_id, "hello from hermes")
+./hermes-agent/tests/tools/test_browser_console.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/tools/test_skill_env_passthrough.py:        from hermes_cli.config import save_env_value
+./hermes-agent/tests/tools/test_clipboard.py:from hermes_cli.clipboard import (
+./hermes-agent/tests/tools/test_local_env_blocklist.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/tools/test_local_env_blocklist.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import terminal
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import terminal, read_file
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import terminal
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import web_search
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import json_parse
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import shell_quote
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import retry
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import retry
+./hermes-agent/tests/tools/test_code_execution.py:from hermes_tools import retry
+./hermes-agent/tests/tools/test_code_execution.py:            "from hermes_tools import terminal, web_search, read_file\n"
+./hermes-agent/tests/tools/test_code_execution.py:            "from hermes_tools import terminal, web_search\n"
+./hermes-agent/tests/tools/test_code_execution.py:            "from hermes_tools import terminal\n"
+./hermes-agent/tests/tools/test_skills_tool.py:            from hermes_cli.config import save_env_value
+./hermes-agent/tests/tools/test_skills_tool.py:            from hermes_cli.config import save_env_value
+./hermes-agent/tests/tools/test_skills_tool.py:            from hermes_cli.config import save_env_value
+./hermes-agent/tests/tools/test_website_policy.py:    from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/tools/test_config_null_guard.py:        from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/tests/test_mcp_serve.py:        from hermes_cli.mcp_config import mcp_command
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli import plugins as plugins_mod
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli.plugins import PluginManager
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli import plugins as plugins_mod
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli.plugins import PluginContext, PluginManager, PluginManifest
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli import plugins as plugins_mod
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli.plugins import PluginManager
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli import plugins as plugins_mod
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli.plugins import PluginManager
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli import plugins as plugins_mod
+./hermes-agent/tests/test_plugin_skills.py:        from hermes_cli.plugins import PluginManager
+./hermes-agent/tests/cron/test_cron_inactivity_timeout.py:        from hermes_constants import get_hermes_home
+./hermes-agent/tests/cron/test_file_permissions.py:            from hermes_cli.config import save_config
+./hermes-agent/tests/cron/test_file_permissions.py:            from hermes_cli.config import save_env_value
+./hermes-agent/tests/cron/test_file_permissions.py:            from hermes_cli.config import ensure_hermes_home
+./hermes-agent/tests/test_hermes_constants.py:from hermes_constants import get_default_hermes_root, is_container
+./hermes-agent/tests/test_hermes_state.py:from hermes_state import SessionDB
+./hermes-agent/tests/test_hermes_state.py:        from hermes_state import SessionDB
+./hermes-agent/tests/test_hermes_state.py:        from hermes_state import SessionDB
+./hermes-agent/tests/test_hermes_state.py:        from hermes_state import SessionDB
+./hermes-agent/tests/test_hermes_state.py:        from hermes_state import SessionDB
+./hermes-agent/tests/test_hermes_state.py:        from hermes_state import SessionDB as _SessionDB
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_cli.profiles import _PROFILE_DIRS
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_cli.profiles import create_profile
+./hermes-agent/tests/test_subprocess_home_isolation.py:        from hermes_constants import get_subprocess_home
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_constants import apply_ipv4_preference
+./hermes-agent/tests/test_ipv4_preference.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/test_cli_skin_integration.py:from hermes_cli.skin_engine import get_active_skin, set_active_skin
+./hermes-agent/tests/agent/test_auxiliary_client.py:    from hermes_cli.auth import ProviderConfig
+./hermes-agent/tests/agent/test_context_engine.py:        from hermes_cli.plugins import PluginManager, PluginContext, PluginManifest
+./hermes-agent/tests/agent/test_context_engine.py:        from hermes_cli.plugins import PluginManager, PluginContext, PluginManifest
+./hermes-agent/tests/agent/test_context_engine.py:        from hermes_cli.plugins import PluginManager, PluginContext, PluginManifest
+./hermes-agent/tests/agent/test_context_engine.py:        from hermes_cli.plugins import PluginManager, PluginContext, PluginManifest, get_plugin_context_engine, _plugin_manager
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth import AuthError
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth_commands import _OAUTH_CAPABLE_PROVIDERS
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth import get_auth_status
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.auth import get_auth_status
+./hermes-agent/tests/agent/test_gemini_cloudcode.py:        from hermes_cli.commands import COMMANDS
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_ALIASES
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_ALIASES
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_ALIASES
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_ALIASES
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_LABELS
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.auth import AuthError
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.providers import ALIASES
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.providers import TRANSPORT_TO_API_MODE
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_bedrock_integration.py:        from hermes_cli.providers import _LABEL_OVERRIDES
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_minimax_provider.py:        from hermes_cli.providers import determine_api_mode
+./hermes-agent/tests/agent/test_insights.py:from hermes_state import SessionDB
+./hermes-agent/tests/agent/test_credential_pool.py:    from hermes_cli.auth import AuthError
+./hermes-agent/tests/agent/test_auxiliary_config_bridge.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/agent/test_auxiliary_config_bridge.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/agent/test_auxiliary_config_bridge.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/agent/test_prompt_builder.py:from hermes_cli.nous_subscription import NousFeatureState, NousSubscriptionFeatures
+./hermes-agent/tests/agent/test_display_emoji.py:        from hermes_cli.skin_engine import SkinConfig
+./hermes-agent/tests/agent/test_display_emoji.py:        from hermes_cli.skin_engine import SkinConfig
+./hermes-agent/tests/agent/test_display_emoji.py:        from hermes_cli.skin_engine import _build_skin_config
+./hermes-agent/tests/agent/test_display_emoji.py:        from hermes_cli.skin_engine import _build_skin_config
+./hermes-agent/tests/hermes_cli/test_tips.py:from hermes_cli.tips import TIPS, get_random_tip
+./hermes-agent/tests/hermes_cli/test_tips.py:        from hermes_cli.tips import get_random_tip
+./hermes-agent/tests/hermes_cli/test_tools_disable_enable.py:from hermes_cli.tools_config import tools_disable_enable_command
+./hermes-agent/tests/hermes_cli/test_opencode_go_in_model_list.py:from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_profile_export_credentials.py:from hermes_cli.profiles import export_profile, _DEFAULT_EXPORT_EXCLUDE_ROOT
+./hermes-agent/tests/hermes_cli/test_skills_hub.py:from hermes_cli.skills_hub import do_check, do_install, do_list, do_update, handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias, resolve_alias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias, resolve_alias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias, resolve_alias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import ModelSwitchResult
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.commands import SlashCommandCompleter
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.commands import SlashCommandCompleter
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.commands import SlashCommandCompleter
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import _load_direct_aliases
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import DirectAlias
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import ModelSwitchResult
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_auth.py:        from hermes_cli.model_switch import ModelSwitchResult
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_reset_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth import clear_provider_auth
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_list_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_list_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_list_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth import suppress_credential_source, unsuppress_credential_source, is_source_suppressed
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth import unsuppress_credential_source
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_remove_command
+./hermes-agent/tests/hermes_cli/test_auth_commands.py:    from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/tests/hermes_cli/test_doctor.py:from hermes_cli import doctor as doctor_mod
+./hermes-agent/tests/hermes_cli/test_doctor.py:from hermes_cli.doctor import _has_provider_env_config
+./hermes-agent/tests/hermes_cli/test_doctor.py:            from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_doctor.py:        from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_doctor.py:        from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_doctor.py:        from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_model_switch_custom_providers.py:from hermes_cli.model_switch import list_authenticated_providers, switch_model
+./hermes-agent/tests/hermes_cli/test_model_switch_custom_providers.py:from hermes_cli.providers import resolve_provider_full
+./hermes-agent/tests/hermes_cli/test_anthropic_oauth_flow.py:from hermes_cli.config import load_env, save_env_value
+./hermes-agent/tests/hermes_cli/test_anthropic_oauth_flow.py:    from hermes_cli.main import _run_anthropic_oauth_flow
+./hermes-agent/tests/hermes_cli/test_anthropic_oauth_flow.py:    from hermes_cli.main import _run_anthropic_oauth_flow
+./hermes-agent/tests/hermes_cli/test_setup_prompt_menus.py:from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.models import normalize_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.providers import normalize_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.model_normalize import _VENDOR_PREFIXES
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.model_normalize import _MATCHING_PREFIX_STRIP_PROVIDERS
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.providers import HERMES_OVERLAYS
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.providers import normalize_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.providers import get_label
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:            from hermes_cli.providers import get_provider
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.doctor import _PROVIDER_ENV_HINTS
+./hermes-agent/tests/hermes_cli/test_xiaomi_provider.py:        from hermes_cli.providers import HERMES_OVERLAYS, TRANSPORT_TO_API_MODE
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_custom_provider_model_switch.py:        from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_update_autostash.py:from hermes_cli import config as hermes_config
+./hermes-agent/tests/hermes_cli/test_update_autostash.py:from hermes_cli import main as hermes_main
+./hermes-agent/tests/hermes_cli/test_setup.py:from hermes_cli.auth import get_active_provider
+./hermes-agent/tests/hermes_cli/test_setup.py:from hermes_cli.config import load_config, save_config
+./hermes-agent/tests/hermes_cli/test_setup.py:from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup.py:from hermes_cli.setup import setup_model_provider
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli.main import select_provider_and_model
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli.setup import setup_terminal_backend
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli.setup import setup_terminal_backend
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup.py:    from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_gateway_runtime_health.py:from hermes_cli.gateway import _runtime_health_lines
+./hermes-agent/tests/hermes_cli/test_session_browse.py:from hermes_cli.main import _session_browse_picker
+./hermes-agent/tests/hermes_cli/test_session_browse.py:        from hermes_cli.main import main as _main_entry
+./hermes-agent/tests/hermes_cli/test_session_browse.py:        from hermes_cli.main import _session_browse_picker
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.models import normalize_provider
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.providers import normalize_provider
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.models import CANONICAL_PROVIDERS
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.model_normalize import _MATCHING_PREFIX_STRIP_PROVIDERS
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.providers import HERMES_OVERLAYS
+./hermes-agent/tests/hermes_cli/test_arcee_provider.py:        from hermes_cli.models import _PROVIDER_LABELS
+./hermes-agent/tests/hermes_cli/test_config_env_expansion.py:from hermes_cli.config import _expand_env_vars, load_config
+./hermes-agent/tests/hermes_cli/test_user_providers_model_switch.py:from hermes_cli.model_switch import list_authenticated_providers, switch_model
+./hermes-agent/tests/hermes_cli/test_user_providers_model_switch.py:from hermes_cli import runtime_provider as rp
+./hermes-agent/tests/hermes_cli/test_plugins.py:from hermes_cli.plugins import (
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:from hermes_cli.auth import AuthError, get_provider_auth_state, resolve_nous_runtime_credentials
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import _resolve_verify
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:    from hermes_cli.auth import get_nous_auth_status
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:    from hermes_cli.auth import get_nous_auth_status
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:    from hermes_cli.auth import get_nous_auth_status
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import PROVIDER_REGISTRY, _login_nous
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import PROVIDER_REGISTRY, _login_nous
+./hermes-agent/tests/hermes_cli/test_auth_nous_provider.py:        from hermes_cli.auth import PROVIDER_REGISTRY, _login_nous
+./hermes-agent/tests/hermes_cli/test_commands.py:from hermes_cli.commands import (
+./hermes-agent/tests/hermes_cli/test_commands.py:from hermes_cli.commands import discord_skill_commands_by_category  # noqa: E402
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:from hermes_cli.copilot_auth import _try_gh_cli_token
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli import config as config_module
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _has_any_provider_configured
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.main import _PROVIDER_MODELS as main_models
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_MODELS as models_models
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_ALIASES
+./hermes-agent/tests/hermes_cli/test_api_key_providers.py:        from hermes_cli.models import _PROVIDER_LABELS
+./hermes-agent/tests/hermes_cli/test_update_check.py:    from hermes_cli import __version__
+./hermes-agent/tests/hermes_cli/test_update_check.py:    from hermes_cli.banner import check_for_updates
+./hermes-agent/tests/hermes_cli/test_update_check.py:    from hermes_cli.banner import check_for_updates
+./hermes-agent/tests/hermes_cli/test_update_check.py:    from hermes_cli.main import _invalidate_update_cache
+./hermes-agent/tests/hermes_cli/test_update_check.py:    from hermes_cli.main import _invalidate_update_cache
+./hermes-agent/tests/hermes_cli/test_gemini_provider.py:from hermes_cli.auth import PROVIDER_REGISTRY, resolve_provider, resolve_api_key_provider_credentials
+./hermes-agent/tests/hermes_cli/test_gemini_provider.py:from hermes_cli.models import _PROVIDER_MODELS, _PROVIDER_LABELS, _PROVIDER_ALIASES, normalize_provider
+./hermes-agent/tests/hermes_cli/test_gemini_provider.py:from hermes_cli.model_normalize import normalize_model_for_provider, detect_vendor
+./hermes-agent/tests/hermes_cli/test_gemini_provider.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_model_switch_copilot_api_mode.py:from hermes_cli.model_switch import switch_model
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:from hermes_cli.auth import PROVIDER_REGISTRY, resolve_provider, resolve_api_key_provider_credentials
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:from hermes_cli.models import _PROVIDER_MODELS, _PROVIDER_LABELS, _PROVIDER_ALIASES, normalize_provider
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import provider_model_ids
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models, _save_ollama_cloud_cache
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.providers import HERMES_OVERLAYS
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.providers import normalize_provider as np
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.providers import _LABEL_OVERRIDES
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.providers import get_label
+./hermes-agent/tests/hermes_cli/test_ollama_cloud_provider.py:        from hermes_cli.providers import get_provider
+./hermes-agent/tests/hermes_cli/test_terminal_menu_fallbacks.py:from hermes_cli.config import load_config, save_config
+./hermes-agent/tests/hermes_cli/test_terminal_menu_fallbacks.py:    from hermes_cli.auth import _prompt_model_selection
+./hermes-agent/tests/hermes_cli/test_terminal_menu_fallbacks.py:    from hermes_cli.main import _prompt_reasoning_effort_selection
+./hermes-agent/tests/hermes_cli/test_terminal_menu_fallbacks.py:    from hermes_cli.main import _remove_custom_provider
+./hermes-agent/tests/hermes_cli/test_terminal_menu_fallbacks.py:    from hermes_cli.main import _model_flow_named_custom
+./hermes-agent/tests/hermes_cli/test_cron.py:from hermes_cli.cron import cron_command
+./hermes-agent/tests/hermes_cli/test_mcp_tools_config.py:from hermes_cli.tools_config import _configure_mcp_tools_interactive
+./hermes-agent/tests/hermes_cli/test_web_server.py:from hermes_cli.config import (
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app, _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_env_value
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_env_value
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_env_value
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _build_schema_from_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app, _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import load_config, save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app, _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _normalize_config_for_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _normalize_config_for_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _normalize_config_for_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _normalize_config_for_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _denormalize_config_from_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _denormalize_config_from_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _denormalize_config_from_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _denormalize_config_from_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import _denormalize_config_from_web
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.config import save_config
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import CONFIG_SCHEMA
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app
+./hermes-agent/tests/hermes_cli/test_web_server.py:        from hermes_cli.web_server import app, _SESSION_TOKEN
+./hermes-agent/tests/hermes_cli/test_set_config_value.py:from hermes_cli.config import set_config_value, config_command
+./hermes-agent/tests/hermes_cli/test_overlay_slug_resolution.py:from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_overlay_slug_resolution.py:    from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/hermes_cli/test_skills_install_flags.py:    from hermes_cli.main import main
+./hermes-agent/tests/hermes_cli/test_skills_install_flags.py:    from hermes_cli.main import main
+./hermes-agent/tests/hermes_cli/test_skills_install_flags.py:    from hermes_cli.main import main
+./hermes-agent/tests/hermes_cli/test_skills_install_flags.py:    from hermes_cli.main import main
+./hermes-agent/tests/hermes_cli/test_skills_install_flags.py:    from hermes_cli.main import main
+./hermes-agent/tests/hermes_cli/test_nous_subscription.py:from hermes_cli import nous_subscription as ns
+./hermes-agent/tests/hermes_cli/test_setup_model_provider.py:from hermes_cli.main, these tests mock the delegation point and verify
+./hermes-agent/tests/hermes_cli/test_setup_model_provider.py:from hermes_cli.config import load_config, save_config, save_env_value
+./hermes-agent/tests/hermes_cli/test_setup_model_provider.py:from hermes_cli.nous_subscription import NousFeatureState, NousSubscriptionFeatures
+./hermes-agent/tests/hermes_cli/test_setup_model_provider.py:from hermes_cli.setup import _print_setup_summary, setup_model_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import _save_model_choice
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import _save_model_choice
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_copilot
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_copilot_acp
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config, get_env_value
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config, get_env_value
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.main import _model_flow_api_key_provider
+./hermes-agent/tests/hermes_cli/test_model_provider_persistence.py:        from hermes_cli.config import load_config, get_env_value
+./hermes-agent/tests/hermes_cli/test_update_gateway_restart.py:from hermes_cli.main import cmd_update
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:from hermes_cli.config import (
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_container_aware_cli.py:    from hermes_cli.main import _exec_in_container
+./hermes-agent/tests/hermes_cli/test_status.py:from hermes_cli.status import show_status
+./hermes-agent/tests/hermes_cli/test_status.py:    from hermes_cli import status as status_mod
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:from hermes_cli.plugins_cmd import (
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_install
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_install
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_install
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_update
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_update
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_remove
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_remove
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_list
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import cmd_list
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _copy_example_files
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _copy_example_files
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _copy_example_files
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _prompt_plugin_env_vars
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _get_current_memory_provider
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _get_current_context_engine
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _save_memory_provider
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:        from hermes_cli.plugins_cmd import _save_context_engine
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:            from hermes_cli.plugins_cmd import _discover_memory_providers
+./hermes-agent/tests/hermes_cli/test_plugins_cmd.py:            from hermes_cli.plugins_cmd import _discover_context_engines
+./hermes-agent/tests/hermes_cli/test_reasoning_effort_menu.py:from hermes_cli.main import _prompt_reasoning_effort_selection
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:from hermes_cli import runtime_provider as rp
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import AuthError
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import resolve_provider
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import AuthError
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import AuthError
+./hermes-agent/tests/hermes_cli/test_runtime_provider_resolution.py:    from hermes_cli.auth import AuthError
+./hermes-agent/tests/hermes_cli/test_model_normalize.py:from hermes_cli.model_normalize import (
+./hermes-agent/tests/hermes_cli/test_models.py:from hermes_cli.models import (
+./hermes-agent/tests/hermes_cli/test_models.py:        from hermes_cli.models import _find_openrouter_slug
+./hermes-agent/tests/hermes_cli/test_models.py:        from hermes_cli.models import _find_openrouter_slug
+./hermes-agent/tests/hermes_cli/test_models.py:        from hermes_cli.models import _find_openrouter_slug
+./hermes-agent/tests/hermes_cli/test_models.py:        from hermes_cli.models import _find_openrouter_slug
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_auth_provider_gate.py:    from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/tests/hermes_cli/test_config.py:from hermes_cli.config import (
+./hermes-agent/tests/hermes_cli/test_config.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/hermes_cli/test_config.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/hermes_cli/test_config.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/hermes_cli/test_config.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/hermes_cli/test_config.py:        from hermes_cli.config import ENV_VARS_BY_VERSION
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _should_exclude
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup, run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _format_size
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _format_size
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _format_size
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _format_size
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _format_size
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _validate_backup_zip
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _detect_prefix
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _detect_prefix
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _detect_prefix
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_backup
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import run_import
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _safe_copy_db
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import _safe_copy_db
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, list_quick_snapshots
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, list_quick_snapshots
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, restore_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, restore_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import restore_quick_snapshot
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, list_quick_snapshots, _QUICK_DEFAULT_KEEP
+./hermes-agent/tests/hermes_cli/test_backup.py:        from hermes_cli.backup import create_quick_snapshot, prune_quick_snapshots, list_quick_snapshots
+./hermes-agent/tests/hermes_cli/test_setup_openclaw_migration.py:from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.tools_config import _estimate_tool_tokens, _tool_token_cache
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.tools_config import CONFIGURABLE_TOOLSETS
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.tools_config import CONFIGURABLE_TOOLSETS
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.tools_config import CONFIGURABLE_TOOLSETS
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.curses_ui import _numbered_fallback
+./hermes-agent/tests/hermes_cli/test_tool_token_estimation.py:    from hermes_cli.curses_ui import _numbered_fallback
+./hermes-agent/tests/hermes_cli/test_logs.py:from hermes_cli.logs import (
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import save_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import save_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import save_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import save_disabled_skills
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import _get_categories
+./hermes-agent/tests/hermes_cli/test_skills_config.py:        from hermes_cli.skills_config import _get_categories
+./hermes-agent/tests/hermes_cli/test_clear_stale_base_url.py:from hermes_cli.config import load_config, save_config, save_env_value, get_env_value
+./hermes-agent/tests/hermes_cli/test_clear_stale_base_url.py:        from hermes_cli.main import _clear_stale_openai_base_url
+./hermes-agent/tests/hermes_cli/test_clear_stale_base_url.py:        from hermes_cli.main import _clear_stale_openai_base_url
+./hermes-agent/tests/hermes_cli/test_clear_stale_base_url.py:        from hermes_cli.main import _clear_stale_openai_base_url
+./hermes-agent/tests/hermes_cli/test_clear_stale_base_url.py:        from hermes_cli.main import _clear_stale_openai_base_url
+./hermes-agent/tests/hermes_cli/test_config_validation.py:from hermes_cli.config import validate_config_structure, ConfigIssue
+./hermes-agent/tests/hermes_cli/test_banner_git_state.py:    from hermes_cli import banner
+./hermes-agent/tests/hermes_cli/test_banner_git_state.py:    from hermes_cli import banner
+./hermes-agent/tests/hermes_cli/test_banner_git_state.py:    from hermes_cli import banner
+./hermes-agent/tests/hermes_cli/test_banner_git_state.py:    from hermes_cli import banner
+./hermes-agent/tests/hermes_cli/test_model_switch_opencode_anthropic.py:from hermes_cli.model_switch import switch_model
+./hermes-agent/tests/hermes_cli/test_codex_models.py:from hermes_cli.codex_models import DEFAULT_CODEX_MODELS, get_codex_model_ids
+./hermes-agent/tests/hermes_cli/test_codex_models.py:    from hermes_cli.codex_models import get_codex_model_ids as setup_import
+./hermes-agent/tests/hermes_cli/test_codex_models.py:    from hermes_cli.main import _model_flow_openai_codex
+./hermes-agent/tests/hermes_cli/test_tools_config.py:from hermes_cli.tools_config import (
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import PLATFORMS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import PLATFORMS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import PLATFORMS as TOOLS_PLATFORMS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.skills_config import PLATFORMS as SKILLS_PLATFORMS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import IMAGEGEN_BACKENDS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import IMAGEGEN_BACKENDS
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import TOOL_CATEGORIES
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import _configure_imagegen_model
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import (
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import _configure_imagegen_model
+./hermes-agent/tests/hermes_cli/test_tools_config.py:        from hermes_cli.tools_config import _configure_imagegen_model
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _upload_paste_rs
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _upload_paste_rs
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _upload_paste_rs
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _upload_dpaste_com
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import upload_to_pastebin
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import upload_to_pastebin
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import upload_to_pastebin
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _read_full_log
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import collect_debug_report
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import collect_debug_report
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import collect_debug_report
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import collect_debug_report
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import collect_debug_report
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _extract_paste_id
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _extract_paste_id
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _extract_paste_id
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _extract_paste_id
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _extract_paste_id
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import delete_paste
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import delete_paste
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _schedule_auto_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _schedule_auto_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import _schedule_auto_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_delete
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_debug.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/tests/hermes_cli/test_deprecated_cwd_warning.py:        from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/tests/hermes_cli/test_deprecated_cwd_warning.py:        from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/tests/hermes_cli/test_deprecated_cwd_warning.py:        from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/tests/hermes_cli/test_deprecated_cwd_warning.py:        from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/tests/hermes_cli/test_deprecated_cwd_warning.py:        from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/tests/hermes_cli/test_managed_installs.py:from hermes_cli.config import (
+./hermes-agent/tests/hermes_cli/test_managed_installs.py:from hermes_cli.main import cmd_update
+./hermes-agent/tests/hermes_cli/test_doctor_command_install.py:        from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_doctor_command_install.py:            from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_doctor_command_install.py:            from hermes_cli import auth as _auth_mod
+./hermes-agent/tests/hermes_cli/test_plugin_cli_registration.py:from hermes_cli.plugins import (
+./hermes-agent/tests/hermes_cli/test_placeholder_usage.py:from hermes_cli.config import config_command, show_config
+./hermes-agent/tests/hermes_cli/test_placeholder_usage.py:from hermes_cli.setup import _print_setup_summary
+./hermes-agent/tests/hermes_cli/test_webhook_cli.py:from hermes_cli.webhook import (
+./hermes-agent/tests/hermes_cli/test_claw.py:from hermes_cli import claw as claw_mod
+./hermes-agent/tests/hermes_cli/test_memory_reset.py:    from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:    from hermes_cli import skin_engine
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import _BUILTIN_SKINS, _build_skin_config
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin, get_active_skin, get_active_skin_name
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import list_skins
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import init_skin_from_config, get_active_skin_name
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import init_skin_from_config, get_active_skin_name
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import init_skin_from_config, get_active_skin_name
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import init_skin_from_config, get_active_skin_name
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import load_skin, _skins_dir
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import list_skins
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import get_active_prompt_symbol
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin, get_active_prompt_symbol
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin, get_active_help_header
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin, get_active_goodbye
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import set_active_skin, get_prompt_toolkit_style_overrides
+./hermes-agent/tests/hermes_cli/test_skin_engine.py:        from hermes_cli.skin_engine import (
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import copilot_default_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import copilot_default_headers
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_copilot_auth.py:        from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/tests/hermes_cli/test_cmd_update.py:from hermes_cli.main import cmd_update, PROJECT_ROOT
+./hermes-agent/tests/hermes_cli/test_non_ascii_credential.py:from hermes_cli.config import _check_non_ascii_credential
+./hermes-agent/tests/hermes_cli/test_non_ascii_credential.py:        from hermes_cli.env_loader import _sanitize_loaded_credentials
+./hermes-agent/tests/hermes_cli/test_non_ascii_credential.py:        from hermes_cli.env_loader import _sanitize_loaded_credentials
+./hermes-agent/tests/hermes_cli/test_non_ascii_credential.py:        from hermes_cli.env_loader import _sanitize_loaded_credentials
+./hermes-agent/tests/hermes_cli/test_non_ascii_credential.py:        from hermes_cli.env_loader import _sanitize_loaded_credentials
+./hermes-agent/tests/hermes_cli/test_codex_cli_model_picker.py:    from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_codex_cli_model_picker.py:    from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_codex_cli_model_picker.py:    from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_codex_cli_model_picker.py:    from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_codex_cli_model_picker.py:    from hermes_cli.model_switch import list_authenticated_providers
+./hermes-agent/tests/hermes_cli/test_auth_qwen_provider.py:from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_path_completion.py:from hermes_cli.commands import SlashCommandCompleter, _file_size_label
+./hermes-agent/tests/hermes_cli/test_env_sanitize_on_load.py:    from hermes_cli.config import load_env
+./hermes-agent/tests/hermes_cli/test_env_sanitize_on_load.py:    from hermes_cli.config import load_env
+./hermes-agent/tests/hermes_cli/test_env_sanitize_on_load.py:    from hermes_cli.env_loader import _sanitize_env_file_if_needed
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import _api_post, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import _api_post, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import _api_post
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import begin_registration
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import begin_registration, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import begin_registration, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import begin_registration, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import wait_for_registration_success
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import wait_for_registration_success, RegistrationError
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import wait_for_registration_success
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli import dingtalk_auth
+./hermes-agent/tests/hermes_cli/test_dingtalk_auth.py:        from hermes_cli.dingtalk_auth import render_qr_to_terminal
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import do_install
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import do_uninstall
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import do_uninstall
+./hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py:        from hermes_cli.skills_hub import do_uninstall
+./hermes-agent/tests/hermes_cli/test_env_loader.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_list
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_list
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_list
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_remove
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_remove
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_remove
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import load_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_add
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_test
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_test
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import _save_mcp_server, _get_mcp_servers
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import (
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import _remove_mcp_server
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import _env_key_for_server
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import mcp_command
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_remove
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_login
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_login
+./hermes-agent/tests/hermes_cli/test_mcp_config.py:        from hermes_cli.mcp_config import cmd_mcp_login
+./hermes-agent/tests/hermes_cli/test_anthropic_provider_persistence.py:from hermes_cli.config import load_env
+./hermes-agent/tests/hermes_cli/test_anthropic_provider_persistence.py:    from hermes_cli.config import save_anthropic_oauth_token
+./hermes-agent/tests/hermes_cli/test_anthropic_provider_persistence.py:    from hermes_cli.config import save_anthropic_oauth_token, use_anthropic_claude_code_credentials
+./hermes-agent/tests/hermes_cli/test_anthropic_provider_persistence.py:    from hermes_cli.config import save_anthropic_api_key
+./hermes-agent/tests/hermes_cli/test_model_switch_variant_tags.py:from hermes_cli.model_switch import switch_model
+./hermes-agent/tests/hermes_cli/test_coalesce_session_args.py:from hermes_cli.main import _coalesce_session_name_args
+./hermes-agent/tests/hermes_cli/test_banner_skills.py:        from hermes_cli.banner import get_available_skills
+./hermes-agent/tests/hermes_cli/test_banner_skills.py:        from hermes_cli.banner import get_available_skills
+./hermes-agent/tests/hermes_cli/test_banner_skills.py:        from hermes_cli.banner import get_available_skills
+./hermes-agent/tests/hermes_cli/test_banner_skills.py:        from hermes_cli.banner import get_available_skills
+./hermes-agent/tests/hermes_cli/test_banner_skills.py:        from hermes_cli.banner import get_available_skills
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:from hermes_cli.config import DEFAULT_CONFIG, load_config, save_config
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.main import cmd_setup
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.main import cmd_setup
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.setup import run_setup_wizard
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.setup import run_setup_wizard
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.setup import run_setup_wizard
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli.main import cmd_chat
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli import setup as setup_mod
+./hermes-agent/tests/hermes_cli/test_setup_noninteractive.py:        from hermes_cli import main as main_mod
+./hermes-agent/tests/hermes_cli/test_completion.py:from hermes_cli.completion import _walk, generate_bash, generate_zsh, generate_fish
+./hermes-agent/tests/hermes_cli/test_completion.py:        from hermes_cli.main import _coalesce_session_name_args
+./hermes-agent/tests/hermes_cli/test_profiles.py:from hermes_cli.profiles import (
+./hermes-agent/tests/hermes_cli/test_profiles.py:        from hermes_cli.profiles import _get_active_profile_path
+./hermes-agent/tests/hermes_cli/test_profiles.py:        from hermes_cli.profiles import _check_gateway_running
+./hermes-agent/tests/hermes_cli/test_profiles.py:        from hermes_cli.profiles import _check_gateway_running
+./hermes-agent/tests/hermes_cli/test_model_validation.py:from hermes_cli.models import (
+./hermes-agent/tests/hermes_cli/test_nous_hermes_non_agentic.py:from hermes_cli.model_switch import (
+./hermes-agent/tests/hermes_cli/test_auth_codex_provider.py:from hermes_cli.auth import (
+./hermes-agent/tests/hermes_cli/test_auth_codex_provider.py:    from hermes_cli.auth import _refresh_codex_auth_tokens
+./hermes-agent/tests/hermes_cli/test_status_model_provider.py:from hermes_cli.nous_subscription import NousFeatureState, NousSubscriptionFeatures
+./hermes-agent/tests/hermes_cli/test_status_model_provider.py:    from hermes_cli import status as status_mod
+./hermes-agent/tests/hermes_cli/test_status_model_provider.py:    from hermes_cli import status as status_mod
+./hermes-agent/tests/hermes_cli/test_status_model_provider.py:    from hermes_cli import status as status_mod
+./hermes-agent/tests/hermes_cli/test_status_model_provider.py:    from hermes_cli import status as status_mod
+./hermes-agent/tests/run_agent/test_compression_persistence.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_compression_persistence.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/run_agent/test_860_dedup.py:        from hermes_state import SessionDB
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:from hermes_cli.auth import AuthError
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:from hermes_cli import main as hermes_main
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:    from hermes_cli.main import _auto_provider_name
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:    from hermes_cli.main import _auto_provider_name
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:    from hermes_cli.main import _auto_provider_name
+./hermes-agent/tests/cli/test_cli_provider_resolution.py:    from hermes_cli.main import _save_custom_provider
+./hermes-agent/tests/cli/test_resume_display.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/cli/test_cli_new_session.py:from hermes_state import SessionDB
+./hermes-agent/tests/cli/test_branch_command.py:    from hermes_state import SessionDB
+./hermes-agent/tests/cli/test_branch_command.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/cli/test_branch_command.py:        from hermes_cli.commands import COMMAND_REGISTRY
+./hermes-agent/tests/cli/test_branch_command.py:        from hermes_cli.commands import COMMAND_REGISTRY
+./hermes-agent/tests/cli/test_branch_command.py:        from hermes_cli.commands import COMMAND_REGISTRY
+./hermes-agent/tests/cli/test_session_boundary_hooks.py:from hermes_cli.plugins import VALID_HOOKS, PluginManager
+./hermes-agent/tests/cli/test_reasoning_command.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/cli/test_reasoning_command.py:        from hermes_cli.commands import COMMANDS
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.models import _is_anthropic_fast_model
+./hermes-agent/tests/cli/test_fast_command.py:        from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/tests/cli/test_cli_skin_integration.py:from hermes_cli.skin_engine import get_active_skin, set_active_skin
+./hermes-agent/tests/cli/test_cli_status_command.py:from hermes_cli.commands import resolve_command
+./hermes-agent/tests/cli/test_cli_init.py:        from hermes_cli.config import _normalize_root_model_keys
+./hermes-agent/tests/cli/test_cli_init.py:        from hermes_cli.config import _normalize_root_model_keys
+./hermes-agent/tests/cli/test_cli_secret_capture.py:from hermes_cli.callbacks import prompt_for_secret
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_title_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_api_server_toolset.py:        from hermes_cli.tools_config import PLATFORMS
+./hermes-agent/tests/gateway/test_update_streaming.py:            from hermes_cli.main import _gateway_prompt
+./hermes-agent/tests/gateway/test_update_streaming.py:            from hermes_cli.main import _gateway_prompt
+./hermes-agent/tests/gateway/test_update_streaming.py:            from hermes_cli.main import _gateway_prompt
+./hermes-agent/tests/gateway/test_update_streaming.py:            from hermes_cli.main import _gateway_prompt
+./hermes-agent/tests/gateway/test_update_streaming.py:        from hermes_cli.main import _restore_stashed_changes
+./hermes-agent/tests/gateway/test_update_streaming.py:        from hermes_cli.main import _restore_stashed_changes
+./hermes-agent/tests/gateway/test_update_streaming.py:        from hermes_cli.main import _restore_stashed_changes
+./hermes-agent/tests/gateway/test_proxy_mode.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/gateway/test_proxy_mode.py:        from hermes_cli.config import OPTIONAL_ENV_VARS
+./hermes-agent/tests/gateway/test_whatsapp_reply_prefix.py:        from hermes_cli.config import DEFAULT_CONFIG, ENV_VARS_BY_VERSION
+./hermes-agent/tests/gateway/test_voice_command.py:        from hermes_cli.commands import gateway_help_lines
+./hermes-agent/tests/gateway/test_voice_command.py:        from hermes_cli.commands import GATEWAY_KNOWN_COMMANDS
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_resume_command.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_session.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_session.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_session.py:        from hermes_state import SessionDB
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import GATEWAY_KNOWN_COMMANDS
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import GATEWAY_KNOWN_COMMANDS
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import COMMANDS
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import COMMANDS
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import COMMANDS_BY_CATEGORY
+./hermes-agent/tests/gateway/test_background_command.py:        from hermes_cli.commands import SlashCommandCompleter
+./hermes-agent/tests/gateway/test_setup_feishu.py:        from hermes_cli.gateway import _setup_feishu
+./hermes-agent/tests/gateway/test_command_bypass_active_session.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/gateway/test_command_bypass_active_session.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/gateway/test_command_bypass_active_session.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/gateway/test_command_bypass_active_session.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/gateway/test_command_bypass_active_session.py:        from hermes_cli.commands import resolve_command
+./hermes-agent/tests/gateway/test_verbose_command.py:        from hermes_cli.commands import GATEWAY_KNOWN_COMMANDS
+./hermes-agent/tests/acp/test_server.py:from hermes_state import SessionDB
+./hermes-agent/tests/acp/test_session.py:from hermes_state import SessionDB
+./hermes-agent/cron/scheduler.py:from hermes_constants import get_hermes_home
+./hermes-agent/cron/scheduler.py:from hermes_cli.config import load_config
+./hermes-agent/cron/scheduler.py:from hermes_time import now as _hermes_now
+./hermes-agent/cron/scheduler.py:    from hermes_constants import get_hermes_home
+./hermes-agent/cron/scheduler.py:        from hermes_state import SessionDB
+./hermes-agent/cron/scheduler.py:            from hermes_constants import apply_ipv4_preference
+./hermes-agent/cron/scheduler.py:        from hermes_constants import parse_reasoning_effort
+./hermes-agent/cron/scheduler.py:        from hermes_cli.runtime_provider import (
+./hermes-agent/cron/jobs.py:from hermes_constants import get_hermes_home
+./hermes-agent/cron/jobs.py:from hermes_time import now as _hermes_now
+./hermes-agent/cli.py:from hermes_cli.banner import _format_context_length, format_banner_version_label
+./hermes-agent/cli.py:from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/cli.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/cli.py:    from hermes_constants import parse_reasoning_effort
+./hermes-agent/cli.py:    from hermes_cli.config import _expand_env_vars
+./hermes-agent/cli.py:    from hermes_logging import setup_logging
+./hermes-agent/cli.py:    from hermes_cli.config import print_config_warnings
+./hermes-agent/cli.py:    from hermes_cli.skin_engine import init_skin_from_config
+./hermes-agent/cli.py:from hermes_cli.banner import build_welcome_banner
+./hermes-agent/cli.py:from hermes_cli.commands import SlashCommandCompleter, SlashCommandAutoSuggest
+./hermes-agent/cli.py:from hermes_cli.callbacks import prompt_for_secret
+./hermes-agent/cli.py:        from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/cli.py:                from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:from hermes_constants import is_termux as _is_termux_environment
+./hermes-agent/cli.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:        from hermes_cli.plugins import get_plugin_manager
+./hermes-agent/cli.py:                from hermes_cli.runtime_provider import _auto_detect_local_model
+./hermes-agent/cli.py:            from hermes_state import SessionDB
+./hermes-agent/cli.py:            from hermes_cli.model_normalize import (
+./hermes-agent/cli.py:                from hermes_cli.models import copilot_model_api_mode, normalize_copilot_model_id
+./hermes-agent/cli.py:                from hermes_cli.models import normalize_opencode_model_id, opencode_model_api_mode
+./hermes-agent/cli.py:                from hermes_cli.codex_models import get_codex_model_ids
+./hermes-agent/cli.py:                from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:        from hermes_cli.runtime_provider import (
+./hermes-agent/cli.py:                from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/cli.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/cli.py:                from hermes_state import SessionDB
+./hermes-agent/cli.py:        from hermes_cli.model_switch import is_nous_hermes_non_agentic
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:        from hermes_cli.clipboard import save_clipboard_image
+./hermes-agent/cli.py:        from hermes_cli.backup import (
+./hermes-agent/cli.py:        from hermes_constants import display_hermes_home
+./hermes-agent/cli.py:        from hermes_cli.clipboard import has_clipboard_image
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:            from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/cli.py:        from hermes_cli.commands import COMMANDS_BY_CATEGORY
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_help_header
+./hermes-agent/cli.py:        from hermes_cli.tools_config import tools_disable_enable_command
+./hermes-agent/cli.py:        from hermes_cli.tools_config import _get_platform_tools
+./hermes-agent/cli.py:        from hermes_cli.config import load_config
+./hermes-agent/cli.py:        from hermes_constants import display_hermes_home
+./hermes-agent/cli.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/cli.py:        from hermes_cli.main import _relative_time
+./hermes-agent/cli.py:            from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/cli.py:        from hermes_cli.main import _resolve_session_by_name_or_id
+./hermes-agent/cli.py:        from hermes_cli.curses_ui import curses_single_select
+./hermes-agent/cli.py:                    from hermes_cli.models import provider_model_ids
+./hermes-agent/cli.py:                from hermes_cli.model_switch import switch_model
+./hermes-agent/cli.py:        from hermes_cli.model_switch import switch_model, parse_model_flags, list_authenticated_providers
+./hermes-agent/cli.py:        from hermes_cli.providers import get_label
+./hermes-agent/cli.py:                from hermes_cli.config import get_compatible_custom_providers, load_config
+./hermes-agent/cli.py:            from hermes_cli.commands import resolve_command
+./hermes-agent/cli.py:        from hermes_cli.models import (
+./hermes-agent/cli.py:        from hermes_cli.auth import resolve_provider as _resolve_provider
+./hermes-agent/cli.py:                    from hermes_cli.models import _get_custom_base_url
+./hermes-agent/cli.py:        from hermes_cli.skills_hub import handle_skills_slash
+./hermes-agent/cli.py:        from hermes_cli.commands import resolve_command as _resolve_cmd
+./hermes-agent/cli.py:                    from hermes_cli.tips import get_random_tip
+./hermes-agent/cli.py:                        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:                    from hermes_cli.tips import get_random_tip
+./hermes-agent/cli.py:                        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:                            from hermes_state import SessionDB
+./hermes-agent/cli.py:            from hermes_cli.config import reload_env
+./hermes-agent/cli.py:                from hermes_cli.plugins import get_plugin_manager
+./hermes-agent/cli.py:                from hermes_cli.plugins import get_plugin_command_handler
+./hermes-agent/cli.py:                from hermes_cli.commands import COMMANDS
+./hermes-agent/cli.py:                        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:                        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import list_skins, set_active_skin, get_active_skin_name
+./hermes-agent/cli.py:        from hermes_cli.colors import Colors as _Colors
+./hermes-agent/cli.py:        from hermes_cli.colors import Colors as _Colors
+./hermes-agent/cli.py:            from hermes_cli.models import _is_anthropic_fast_model
+./hermes-agent/cli.py:        from hermes_cli.debug import run_debug_share
+./hermes-agent/cli.py:            from hermes_state import SessionDB
+./hermes-agent/cli.py:        from hermes_cli.config import get_config_path as _get_config_path
+./hermes-agent/cli.py:            from hermes_cli.config import load_config
+./hermes-agent/cli.py:                from hermes_cli.config import load_config
+./hermes-agent/cli.py:            from hermes_cli.config import load_config
+./hermes-agent/cli.py:            from hermes_cli.config import load_config
+./hermes-agent/cli.py:        from hermes_cli.config import load_config
+./hermes-agent/cli.py:                    from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:                from hermes_cli.skin_engine import get_active_goodbye
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_prompt_symbol
+./hermes-agent/cli.py:            from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_prompt_toolkit_style_overrides
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:            from hermes_cli.tips import get_random_tip
+./hermes-agent/cli.py:        from hermes_cli.plugins import get_plugin_manager
+./hermes-agent/cli.py:        from hermes_cli.config import get_config_path as _get_config_path
+./hermes-agent/cli.py:            from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/cli.py:            from hermes_cli.config import load_config
+./hermes-agent/cli.py:                    from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/cli.py:        from hermes_cli.tools_config import _get_platform_tools
+./hermes-agent/website/docs/user-guide/features/dashboard-plugins.md:from hermes_state import SessionDB
+./hermes-agent/website/docs/user-guide/features/dashboard-plugins.md:from hermes_cli.config import load_config
+./hermes-agent/website/docs/user-guide/features/code-execution.md:1. The agent writes a Python script using `from hermes_tools import ...`
+./hermes-agent/website/docs/user-guide/features/code-execution.md:from hermes_tools import web_search, web_extract
+./hermes-agent/website/docs/user-guide/features/code-execution.md:from hermes_tools import search_files, read_file
+./hermes-agent/website/docs/user-guide/features/code-execution.md:from hermes_tools import web_search, web_extract
+./hermes-agent/website/docs/user-guide/features/code-execution.md:from hermes_tools import search_files, read_file, patch
+./hermes-agent/website/docs/user-guide/features/code-execution.md:from hermes_tools import terminal, read_file
+./hermes-agent/website/docs/developer-guide/session-storage.md:from hermes_state import SessionDB
+./hermes-agent/website/docs/developer-guide/memory-provider-plugin.md:from hermes_constants import get_hermes_home
+./hermes-agent/website/docs/guides/delegation-patterns.md:from hermes_tools import web_search, web_extract
+./hermes-agent/acp_adapter/session.py:from hermes_constants import get_hermes_home
+./hermes-agent/acp_adapter/session.py:            from hermes_state import SessionDB
+./hermes-agent/acp_adapter/session.py:        from hermes_cli.config import load_config
+./hermes-agent/acp_adapter/session.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/acp_adapter/auth.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/acp_adapter/entry.py:from hermes_constants import get_hermes_home
+./hermes-agent/acp_adapter/entry.py:    from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/acp_adapter/server.py:    from hermes_cli import __version__ as HERMES_VERSION
+./hermes-agent/acp_adapter/server.py:            from hermes_cli.models import parse_model_input, detect_provider_for_model
+./hermes-agent/skills/productivity/google-workspace/scripts/setup.py:    from hermes_constants import display_hermes_home, get_hermes_home
+./hermes-agent/skills/productivity/google-workspace/scripts/setup.py:    from hermes_constants import display_hermes_home, get_hermes_home
+./hermes-agent/agent/skill_commands.py:from hermes_constants import display_hermes_home
+./hermes-agent/agent/worm_engine_v2.py:from hermes_constants import get_hermes_home, get_skills_dir
+./hermes-agent/agent/google_oauth.py:from hermes_constants import get_hermes_home
+./hermes-agent/agent/insights.py:            db: A SessionDB instance (from hermes_state.py)
+./hermes-agent/agent/skill_utils.py:from hermes_constants import get_config_path, get_skills_dir
+./hermes-agent/agent/nous_rate_guard.py:        from hermes_constants import get_hermes_home
+./hermes-agent/agent/auxiliary_client.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/agent/auxiliary_client.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.auth import _read_codex_tokens
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.auth import PROVIDER_REGISTRY, resolve_api_key_provider_credentials
+./hermes-agent/agent/auxiliary_client.py:                from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/agent/auxiliary_client.py:                from hermes_cli.models import copilot_default_headers
+./hermes-agent/agent/auxiliary_client.py:            from hermes_cli.models import copilot_default_headers
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.models import check_nous_free_tier
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.config import load_config
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.config import load_config
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.config import load_config
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.models import copilot_default_headers
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.model_normalize import normalize_model_for_provider
+./hermes-agent/agent/auxiliary_client.py:                from hermes_cli.models import copilot_default_headers
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.runtime_provider import _get_named_custom_provider
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.auth import (
+./hermes-agent/agent/auxiliary_client.py:            from hermes_cli.models import copilot_default_headers
+./hermes-agent/agent/auxiliary_client.py:                from hermes_cli.models import _should_use_copilot_responses_api
+./hermes-agent/agent/auxiliary_client.py:            from hermes_cli.config import load_config
+./hermes-agent/agent/auxiliary_client.py:        from hermes_cli.config import load_config
+./hermes-agent/agent/anthropic_adapter.py:from hermes_constants import get_hermes_home
+./hermes-agent/agent/prompt_builder.py:from hermes_constants import get_hermes_home, get_skills_dir, is_wsl
+./hermes-agent/agent/prompt_builder.py:        from hermes_cli.nous_subscription import get_nous_subscription_features
+./hermes-agent/agent/prompt_builder.py:        from hermes_cli.config import ensure_hermes_home
+./hermes-agent/agent/context_references.py:    from hermes_constants import get_hermes_home
+./hermes-agent/agent/models_dev.py:    from hermes_constants import get_hermes_home
+./hermes-agent/agent/memory_manager.py:            from hermes_constants import get_hermes_home
+./hermes-agent/agent/credential_pool.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/agent/credential_pool.py:from hermes_cli.auth import (
+./hermes-agent/agent/credential_pool.py:        from hermes_cli.config import load_config
+./hermes-agent/agent/credential_pool.py:            from hermes_cli.config import get_compatible_custom_providers
+./hermes-agent/agent/credential_pool.py:            from hermes_cli.auth import is_provider_explicitly_configured
+./hermes-agent/agent/credential_pool.py:                    from hermes_cli.auth import is_source_suppressed
+./hermes-agent/agent/credential_pool.py:            from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/agent/credential_pool.py:            from hermes_cli.auth import resolve_qwen_runtime_credentials
+./hermes-agent/agent/credential_pool.py:            from hermes_cli.auth import is_source_suppressed
+./hermes-agent/agent/credential_pool.py:                from hermes_cli.auth import _import_codex_cli_tokens, _save_codex_tokens
+./hermes-agent/agent/display.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/agent/display.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/agent/smart_model_routing.py:    from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/agent/model_metadata.py:from hermes_constants import OPENROUTER_MODELS_URL
+./hermes-agent/agent/model_metadata.py:    from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/plugins_cmd.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.config import get_env_value, save_env_value  # noqa: F811
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/plugins_cmd.py:                from hermes_cli.config import recommended_update_command
+./hermes-agent/hermes_cli/plugins_cmd.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/plugins_cmd.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/plugins_cmd.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.curses_ui import flush_stdin
+./hermes-agent/hermes_cli/plugins_cmd.py:    from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/env_loader.py:        from hermes_cli.config import _sanitize_env_lines
+./hermes-agent/hermes_cli/web_server.py:from hermes_cli import __version__, __release_date__
+./hermes-agent/hermes_cli/web_server.py:from hermes_cli.config import (
+./hermes-agent/hermes_cli/web_server.py:        from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:        from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:        from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:        from hermes_cli import auth as hauth
+./hermes-agent/hermes_cli/web_server.py:            from hermes_cli.auth import clear_provider_auth
+./hermes-agent/hermes_cli/web_server.py:        from hermes_cli.auth import clear_provider_auth
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli import auth as hauth
+./hermes-agent/hermes_cli/web_server.py:        from hermes_cli.auth import _request_device_code, PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli.auth import _poll_for_token, refresh_nous_oauth_from_state
+./hermes-agent/hermes_cli/web_server.py:            from hermes_cli.auth import (
+./hermes-agent/hermes_cli/web_server.py:        from hermes_cli.auth import (
+./hermes-agent/hermes_cli/web_server.py:    from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:    from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:    from hermes_state import SessionDB
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli.logs import _read_tail, LOG_FILES
+./hermes-agent/hermes_cli/web_server.py:        from hermes_logging import COMPONENT_PREFIXES
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli.skills_config import get_disabled_skills
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli.skills_config import get_disabled_skills, save_disabled_skills
+./hermes-agent/hermes_cli/web_server.py:    from hermes_cli.tools_config import (
+./hermes-agent/hermes_cli/web_server.py:    from hermes_state import SessionDB
+./hermes-agent/hermes_cli/auth.py:from hermes_cli.config import get_hermes_home, get_config_path, read_raw_config
+./hermes-agent/hermes_cli/auth.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/hermes_cli/auth.py:    from hermes_cli.config import get_env_value
+./hermes-agent/hermes_cli/auth.py:            from hermes_cli.copilot_auth import resolve_copilot_token
+./hermes-agent/hermes_cli/auth.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/auth.py:        from hermes_cli.config import validate_config_structure
+./hermes-agent/hermes_cli/auth.py:    from hermes_cli.models import _format_price_per_mtok
+./hermes-agent/hermes_cli/auth.py:        from hermes_cli.curses_ui import flush_stdin
+./hermes-agent/hermes_cli/auth.py:    from hermes_cli.config import save_config, load_config
+./hermes-agent/hermes_cli/auth.py:    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/auth.py:            from hermes_cli.models import (
+./hermes-agent/hermes_cli/tools_config.py:from hermes_cli.config import (
+./hermes-agent/hermes_cli/tools_config.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/tools_config.py:from hermes_cli.nous_subscription import (
+./hermes-agent/hermes_cli/tools_config.py:from hermes_cli.cli_output import (  # noqa: E402 — late import block
+./hermes-agent/hermes_cli/tools_config.py:        from hermes_cli.plugins import discover_plugins, get_plugin_toolsets
+./hermes-agent/hermes_cli/tools_config.py:        from hermes_cli.plugins import discover_plugins, get_plugin_toolsets
+./hermes-agent/hermes_cli/tools_config.py:from hermes_cli.platforms import PLATFORMS as _PLATFORMS_REGISTRY
+./hermes-agent/hermes_cli/tools_config.py:                from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/tools_config.py:    from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/hermes_cli/tools_config.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/tools_config.py:                from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/tools_config.py:    from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/tools_config.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/nous_subscription.py:from hermes_cli.auth import get_nous_auth_status
+./hermes-agent/hermes_cli/nous_subscription.py:from hermes_cli.config import get_env_value, load_config
+./hermes-agent/hermes_cli/nous_subscription.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/nous_subscription.py:        from hermes_cli.setup import prompt_choice
+./hermes-agent/hermes_cli/nous_subscription.py:        from hermes_cli.config import save_config
+./hermes-agent/hermes_cli/debug.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/debug.py:    from hermes_cli.logs import LOG_FILES
+./hermes-agent/hermes_cli/debug.py:    from hermes_cli.logs import _read_last_n_lines
+./hermes-agent/hermes_cli/debug.py:    from hermes_cli.dump import run_dump
+./hermes-agent/hermes_cli/cron.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/cron.py:    from hermes_cli.gateway import find_gateway_pids
+./hermes-agent/hermes_cli/cron.py:    from hermes_cli.gateway import find_gateway_pids
+./hermes-agent/hermes_cli/callbacks.py:from hermes_cli.banner import cprint, _DIM, _RST
+./hermes-agent/hermes_cli/callbacks.py:from hermes_cli.config import save_env_value_secure
+./hermes-agent/hermes_cli/callbacks.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/curses_ui.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/models.py:    from hermes_cli.codex_models import DEFAULT_CODEX_MODELS, _add_forward_compat_models
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.auth import get_provider_auth_state, resolve_nous_runtime_credentials
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.auth import resolve_nous_runtime_credentials
+./hermes-agent/hermes_cli/models.py:            from hermes_cli.auth import get_auth_status, has_usable_secret
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/models.py:            from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/models.py:                from hermes_cli.auth import _load_auth_store
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.auth import resolve_api_key_provider_credentials
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.codex_models import get_codex_model_ids
+./hermes-agent/hermes_cli/models.py:            from hermes_cli.auth import fetch_nous_models, resolve_nous_runtime_credentials
+./hermes-agent/hermes_cli/models.py:        from hermes_cli.copilot_auth import copilot_request_headers
+./hermes-agent/hermes_cli/models.py:        from hermes_constants import AI_GATEWAY_BASE_URL
+./hermes-agent/hermes_cli/models.py:    from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/dingtalk_auth.py:    from hermes_cli.setup import print_info, print_success, print_warning, print_error
+./hermes-agent/hermes_cli/status.py:from hermes_cli.auth import AuthError, resolve_provider
+./hermes-agent/hermes_cli/status.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/status.py:from hermes_cli.config import get_env_path, get_env_value, get_hermes_home, load_config
+./hermes-agent/hermes_cli/status.py:from hermes_cli.models import provider_label
+./hermes-agent/hermes_cli/status.py:from hermes_cli.nous_subscription import get_nous_subscription_features
+./hermes-agent/hermes_cli/status.py:from hermes_cli.runtime_provider import resolve_requested_provider
+./hermes-agent/hermes_cli/status.py:from hermes_constants import OPENROUTER_MODELS_URL
+./hermes-agent/hermes_cli/status.py:from hermes_constants import is_termux as _is_termux
+./hermes-agent/hermes_cli/status.py:    from hermes_cli.auth import get_anthropic_key
+./hermes-agent/hermes_cli/status.py:        from hermes_cli.auth import get_nous_auth_status, get_codex_auth_status, get_qwen_auth_status
+./hermes-agent/hermes_cli/status.py:            from hermes_cli.gateway import find_gateway_pids
+./hermes-agent/hermes_cli/status.py:        from hermes_constants import is_container
+./hermes-agent/hermes_cli/status.py:                from hermes_cli.gateway import find_gateway_pids
+./hermes-agent/hermes_cli/status.py:                from hermes_cli.gateway import get_service_name
+./hermes-agent/hermes_cli/status.py:        from hermes_cli.gateway import get_launchd_label
+./hermes-agent/hermes_cli/plugins.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/plugins.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/plugins.py:            from hermes_cli.commands import resolve_command
+./hermes-agent/hermes_cli/profiles.py:    from hermes_constants import get_default_hermes_root
+./hermes-agent/hermes_cli/profiles.py:            from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/profiles.py:            from hermes_cli.default_soul import DEFAULT_SOUL_MD
+./hermes-agent/hermes_cli/profiles.py:        from hermes_cli.gateway import get_service_name, get_launchd_plist_path
+./hermes-agent/hermes_cli/profiles.py:    from hermes_constants import get_hermes_home
+grep: ./hermes-agent/hermes_cli/__pycache__/skin_engine.cpython-313.pyc: binary file matches
+./hermes-agent/hermes_cli/mcp_config.py:from hermes_cli.config import (
+./hermes-agent/hermes_cli/mcp_config.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/mcp_config.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/mcp_config.py:    from hermes_cli.cli_output import prompt as _shared_prompt
+./hermes-agent/hermes_cli/mcp_config.py:        from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/mcp_config.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/main.py:            from hermes_constants import get_default_hermes_root
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.profiles import resolve_profile_env
+./hermes-agent/hermes_cli/main.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/hermes_cli/main.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/hermes_cli/main.py:    from hermes_logging import setup_logging as _setup_logging
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config as _load_config_early
+./hermes-agent/hermes_cli/main.py:    from hermes_constants import apply_ipv4_preference as _apply_ipv4
+./hermes-agent/hermes_cli/main.py:from hermes_cli import __version__, __release_date__
+./hermes-agent/hermes_cli/main.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_path, get_hermes_home, load_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import get_auth_status
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/main.py:        from hermes_state import SessionDB
+./hermes-agent/hermes_cli/main.py:        from hermes_state import SessionDB
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.setup import is_interactive_stdin, print_noninteractive_setup_guidance
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.banner import prefetch_update_check
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.gateway import gateway_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, save_env_value
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.setup import run_setup_wizard
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_compatible_custom_providers, load_config, get_env_value
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import CANONICAL_PROVIDERS, _PROVIDER_LABELS
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, save_env_value, load_config
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.setup import _curses_prompt_choice
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import _prompt_model_selection, _save_model_choice, deactivate_provider
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, save_env_value
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import model_ids, get_pricing_for_provider
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, load_config, save_config, save_env_value
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.nous_subscription import prompt_enable_tool_gateway
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import (
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.auth import DEFAULT_NOUS_PORTAL_URL
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.codex_models import get_codex_model_ids
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.auth import resolve_codex_runtime_credentials
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import fetch_api_models
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import _save_model_choice, deactivate_provider
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import probe_api_models
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.curses_ui import flush_stdin
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import _save_model_choice, deactivate_provider
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import fetch_api_models
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.curses_ui import flush_stdin
+./hermes-agent/hermes_cli/main.py:from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.curses_ui import flush_stdin
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import save_env_value, load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import (
+./hermes-agent/hermes_cli/main.py:                from hermes_cli.copilot_auth import copilot_device_code_login
+./hermes-agent/hermes_cli/main.py:                from hermes_cli.copilot_auth import validate_copilot_token
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, save_env_value, load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import _prompt_model_selection, _save_model_choice, deactivate_provider
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config, get_env_value, save_env_value
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import _prompt_model_selection, _save_model_choice, deactivate_provider
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_env_value, save_env_value, load_config, save_config
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import fetch_api_models, opencode_model_api_mode, normalize_opencode_model_id
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import (
+./hermes-agent/hermes_cli/main.py:            from hermes_constants import display_hermes_home as _dhh_fn
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import (
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.models import _PROVIDER_MODELS
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import get_anthropic_key
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import login_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth import logout_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.auth_commands import auth_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.status import show_status
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.cron import cron_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.webhook import webhook_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.doctor import run_doctor
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.dump import run_dump
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.debug import run_debug
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import config_command
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.backup import run_quick_backup
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.backup import run_backup
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.backup import run_import
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.banner import check_for_updates
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.config import recommended_update_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.uninstall import run_uninstall
+./hermes-agent/hermes_cli/main.py:    from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/main.py:    from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/main.py:        from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/main.py:    from hermes_constants import get_default_hermes_root
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import is_managed, managed_error
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.profiles import list_profiles, get_active_profile_name, seed_profile_skills
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.config import (
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.gateway import (
+./hermes-agent/hermes_cli/main.py:                    from hermes_cli.gateway import launchd_restart, get_launchd_label, get_launchd_plist_path
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.profiles import (
+./hermes-agent/hermes_cli/main.py:    from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.profiles import get_profile_dir, profile_exists, _read_config_model, _check_gateway_running, _count_skills
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.profiles import profile_exists
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.profiles import rename_profile
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.profiles import export_profile
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.profiles import import_profile
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.web_server import start_server
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.completion import generate_bash, generate_zsh, generate_fish
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.logs import tail_log, list_logs
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.pairing import pairing_command
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.skills_config import skills_command as skills_config_command
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.skills_hub import skills_command
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.plugins_cmd import plugins_command
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/main.py:            from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.memory_setup import memory_command
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.tools_config import tools_disable_enable_command
+./hermes-agent/hermes_cli/main.py:            from hermes_cli.tools_config import tools_command
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.mcp_config import mcp_command
+./hermes-agent/hermes_cli/main.py:            from hermes_state import SessionDB
+./hermes-agent/hermes_cli/main.py:            from hermes_state import SessionDB
+./hermes-agent/hermes_cli/main.py:        from hermes_cli.claw import claw_command
+./hermes-agent/hermes_cli/main.py:    from hermes_cli.config import get_container_exec_info
+./hermes-agent/hermes_cli/logs.py:from hermes_constants import get_hermes_home, display_hermes_home
+./hermes-agent/hermes_cli/logs.py:        from hermes_logging import COMPONENT_PREFIXES
+./hermes-agent/hermes_cli/uninstall.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/uninstall.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/uninstall.py:        from hermes_cli.gateway import get_service_name
+./hermes-agent/hermes_cli/claw.py:from hermes_cli.config import get_hermes_home, get_config_path, load_config, save_config
+./hermes-agent/hermes_cli/claw.py:from hermes_constants import get_optional_skills_dir
+./hermes-agent/hermes_cli/claw.py:from hermes_cli.setup import (
+./hermes-agent/hermes_cli/doctor.py:from hermes_cli.config import get_project_root, get_hermes_home, get_env_path
+./hermes-agent/hermes_cli/doctor.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/doctor.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/doctor.py:from hermes_constants import OPENROUTER_MODELS_URL
+./hermes-agent/hermes_cli/doctor.py:from hermes_constants import is_termux as _is_termux
+./hermes-agent/hermes_cli/doctor.py:        from hermes_cli.gateway import (
+./hermes-agent/hermes_cli/doctor.py:            from hermes_cli.config import check_config_version, migrate_config
+./hermes-agent/hermes_cli/doctor.py:            from hermes_cli.config import validate_config_structure
+./hermes-agent/hermes_cli/doctor.py:        from hermes_cli.auth import (
+./hermes-agent/hermes_cli/doctor.py:    from hermes_cli.auth import get_anthropic_key
+./hermes-agent/hermes_cli/doctor.py:    from hermes_cli.config import get_env_value
+./hermes-agent/hermes_cli/doctor.py:        from hermes_cli.profiles import list_profiles, _get_wrapper_dir, profile_exists
+./hermes-agent/hermes_cli/banner.py:from hermes_cli import __version__ as VERSION, __release_date__ as RELEASE_DATE # YOUSEF SHTIWE FORCED IMPORT
+./hermes-agent/hermes_cli/banner.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/banner.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/hermes_cli/banner.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/hermes_cli/banner.py:        from hermes_cli.skin_engine import get_active_skin
+./hermes-agent/hermes_cli/banner.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/hermes_cli/banner.py:            from hermes_cli.config import recommended_update_command
+./hermes-agent/hermes_cli/memory_setup.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/memory_setup.py:    from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/hermes_cli/memory_setup.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/memory_setup.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/memory_setup.py:    from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/runtime_provider.py:from hermes_cli import auth as auth_mod
+./hermes-agent/hermes_cli/runtime_provider.py:from hermes_cli.auth import (
+./hermes-agent/hermes_cli/runtime_provider.py:from hermes_cli.config import get_compatible_custom_providers, load_config
+./hermes-agent/hermes_cli/runtime_provider.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/hermes_cli/runtime_provider.py:        from hermes_cli.models import copilot_model_api_mode
+./hermes-agent/hermes_cli/runtime_provider.py:            from hermes_cli.models import opencode_model_api_mode
+./hermes-agent/hermes_cli/runtime_provider.py:        from hermes_cli.config import load_config as _load_bedrock_config
+./hermes-agent/hermes_cli/runtime_provider.py:                from hermes_cli.models import opencode_model_api_mode
+./hermes-agent/hermes_cli/skills_config.py:from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/skills_config.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/skills_config.py:from hermes_cli.platforms import PLATFORMS as _PLATFORMS
+./hermes-agent/hermes_cli/skills_config.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/skills_config.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/skin_engine.py:    from hermes_cli.skin_engine import get_active_skin, list_skins, set_active_skin
+./hermes-agent/hermes_cli/skin_engine.py:from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/setup.py:from hermes_cli.nous_subscription import get_nous_subscription_features
+./hermes-agent/hermes_cli/setup.py:from hermes_constants import get_optional_skills_dir
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/setup.py:from hermes_cli.config import (
+./hermes-agent/hermes_cli/setup.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/setup.py:from hermes_cli.cli_output import (  # noqa: E402
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.curses_ui import curses_radiolist
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.curses_ui import curses_checklist
+./hermes-agent/hermes_cli/setup.py:        from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/setup.py:    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.main import select_provider_and_model
+./hermes-agent/hermes_cli/setup.py:            from hermes_cli.auth_commands import auth_add_command
+./hermes-agent/hermes_cli/setup.py:                from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_weixin as _gateway_setup_weixin
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_signal as _gateway_setup_signal
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_email as _gateway_setup_email
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_sms as _gateway_setup_sms
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_dingtalk as _gateway_setup_dingtalk
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_feishu as _gateway_setup_feishu
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_wecom as _gateway_setup_wecom
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _setup_wecom_callback as _gw_setup
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.gateway import _PLATFORMS
+./hermes-agent/hermes_cli/setup.py:        from hermes_cli.gateway import _setup_standard_platform
+./hermes-agent/hermes_cli/setup.py:    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/setup.py:        from hermes_cli.gateway import (
+./hermes-agent/hermes_cli/setup.py:            from hermes_constants import is_container
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.tools_config import tools_command
+./hermes-agent/hermes_cli/setup.py:    ``get_env_value`` is the module-level import from hermes_cli.config
+./hermes-agent/hermes_cli/setup.py:                from hermes_cli.auth import get_active_provider
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.config import is_managed, managed_error
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.auth import get_active_provider
+./hermes-agent/hermes_cli/setup.py:    from hermes_cli.config import (
+./hermes-agent/hermes_cli/cli_output.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/dump.py:from hermes_cli.config import get_hermes_home, get_env_path, get_project_root, load_config
+./hermes-agent/hermes_cli/dump.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/dump.py:        from hermes_constants import is_container
+./hermes-agent/hermes_cli/dump.py:                from hermes_cli.gateway import find_gateway_pids
+./hermes-agent/hermes_cli/dump.py:            from hermes_cli.gateway import get_service_name
+./hermes-agent/hermes_cli/dump.py:            from hermes_cli.gateway import get_launchd_label
+./hermes-agent/hermes_cli/dump.py:    from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/hermes_cli/dump.py:        from hermes_cli import __version__, __release_date__
+./hermes-agent/hermes_cli/dump.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/hermes_cli/gateway.py:from hermes_cli.config import (
+./hermes-agent/hermes_cli/gateway.py:from hermes_cli.setup import (
+./hermes-agent/hermes_cli/gateway.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/gateway.py:from hermes_constants import is_container, is_termux, is_wsl
+./hermes-agent/hermes_cli/gateway.py:    from hermes_constants import get_default_hermes_root
+./hermes-agent/hermes_cli/gateway.py:    from hermes_constants import get_default_hermes_root
+./hermes-agent/hermes_cli/gateway.py:    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/gateway.py:    from hermes_cli.main import cmd_whatsapp
+./hermes-agent/hermes_cli/gateway.py:    from hermes_cli.setup import (
+./hermes-agent/hermes_cli/gateway.py:            from hermes_cli.dingtalk_auth import dingtalk_qr_auth
+./hermes-agent/hermes_cli/gateway.py:                    from hermes_constants import display_hermes_home as _dhh
+./hermes-agent/hermes_cli/auth_commands.py:from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/auth_commands.py:from hermes_constants import OPENROUTER_BASE_URL
+./hermes-agent/hermes_cli/auth_commands.py:        from hermes_cli.config import get_compatible_custom_providers, load_config
+./hermes-agent/hermes_cli/auth_commands.py:            from hermes_cli.config import remove_env_value
+./hermes-agent/hermes_cli/auth_commands.py:        from hermes_cli.auth import (
+./hermes-agent/hermes_cli/auth_commands.py:        from hermes_cli.auth import (
+./hermes-agent/hermes_cli/auth_commands.py:        from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/auth_commands.py:        from hermes_cli.auth import suppress_credential_source
+./hermes-agent/hermes_cli/auth_commands.py:    from hermes_cli.config import load_config, save_config
+./hermes-agent/hermes_cli/model_switch.py:from hermes_cli.providers import (
+./hermes-agent/hermes_cli/model_switch.py:from hermes_cli.model_normalize import (
+./hermes-agent/hermes_cli/model_switch.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.models import (
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.runtime_provider import resolve_runtime_provider
+./hermes-agent/hermes_cli/model_switch.py:                from hermes_cli.config import validate_config_structure
+./hermes-agent/hermes_cli/model_switch.py:                from hermes_cli.runtime_provider import _auto_detect_local_model
+./hermes-agent/hermes_cli/model_switch.py:    Uses the curated model lists from hermes_cli/models.py (OPENROUTER_MODELS,
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.auth import PROVIDER_REGISTRY
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.models import OPENROUTER_MODELS, _PROVIDER_MODELS
+./hermes-agent/hermes_cli/model_switch.py:        from hermes_cli.models import fetch_ollama_cloud_models
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.providers import HERMES_OVERLAYS
+./hermes-agent/hermes_cli/model_switch.py:    from hermes_cli.auth import PROVIDER_REGISTRY as _auth_registry
+./hermes-agent/hermes_cli/model_switch.py:                from hermes_cli.auth import _load_auth_store
+./hermes-agent/hermes_cli/model_switch.py:        from hermes_cli.models import CANONICAL_PROVIDERS as _canon_provs
+./hermes-agent/hermes_cli/model_switch.py:                from hermes_cli.auth import _load_auth_store
+./hermes-agent/hermes_cli/commands.py:        from hermes_cli.config import read_raw_config
+./hermes-agent/hermes_cli/commands.py:        from hermes_cli.plugins import get_plugin_manager
+./hermes-agent/hermes_cli/commands.py:            from hermes_cli.model_switch import (
+./hermes-agent/hermes_cli/commands.py:            from hermes_cli.plugins import get_plugin_commands
+./hermes-agent/hermes_cli/model_normalize.py:        from hermes_cli.models import normalize_provider
+./hermes-agent/hermes_cli/model_normalize.py:            from hermes_cli.models import normalize_copilot_model_id
+./hermes-agent/hermes_cli/backup.py:from hermes_constants import get_default_hermes_root, get_hermes_home, display_hermes_home
+./hermes-agent/hermes_cli/backup.py:                from hermes_cli.profiles import (
+./hermes-agent/hermes_cli/webhook.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/webhook.py:    from hermes_constants import get_hermes_home
+./hermes-agent/hermes_cli/webhook.py:        from hermes_cli.config import load_config
+./hermes-agent/hermes_cli/webhook.py:    payload = args.payload or '{"test": true, "event_type": "test", "message": "Hello from hermes webhook test"}'
+./hermes-agent/hermes_cli/clipboard.py:from hermes_constants import is_wsl as _is_wsl
+./hermes-agent/hermes_cli/skills_hub.py:from hermes_constants import display_hermes_home
+./hermes-agent/hermes_cli/skills_hub.py:    """Router for `hermes skills <subcommand>` — called from hermes_cli/main.py."""
+./hermes-agent/hermes_cli/config.py:from hermes_cli.colors import Colors, color
+./hermes-agent/hermes_cli/config.py:from hermes_cli.default_soul import DEFAULT_SOUL_MD
+./hermes-agent/hermes_cli/config.py:    from hermes_constants import is_container
+./hermes-agent/hermes_cli/config.py:# Re-export from hermes_constants — canonical definition lives there.
+./hermes-agent/hermes_cli/config.py:from hermes_constants import get_hermes_home  # noqa: F811,E402
+./hermes-agent/hermes_cli/config.py:    from hermes_cli.auth import get_anthropic_key
+./hermes-agent/environments/hermes_base_env.py:# Load API keys from hermes-agent/.env so all environments can access them
+./hermes-agent/AGENTS.md:   from hermes_constants import get_hermes_home
+./hermes-agent/AGENTS.md:   from hermes_constants import display_hermes_home
+./hermes-agent/model_tools.py:    from hermes_cli.plugins import discover_plugins
+./hermes-agent/model_tools.py:                from hermes_cli.plugins import get_pre_tool_call_block_message
+./hermes-agent/model_tools.py:                from hermes_cli.plugins import invoke_hook
+./hermes-agent/model_tools.py:            from hermes_cli.plugins import invoke_hook
+./hermes-agent/mcp_serve.py:        from hermes_constants import get_hermes_home
+./hermes-agent/mcp_serve.py:        from hermes_state import SessionDB
+./hermes-agent/mcp_serve.py:        from hermes_constants import get_hermes_home
+./hermes-agent/mcp_serve.py:            from hermes_constants import get_hermes_home
+./hermes-agent/gateway/sticker_cache.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/session.py:    from hermes_constants import display_hermes_home
+./hermes-agent/gateway/session.py:            from hermes_state import SessionDB
+./hermes-agent/gateway/channel_directory.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/builtin_hooks/boot_md.py:from hermes_constants import get_hermes_home
+./hermes-agent/gateway/pairing.py:from hermes_constants import get_hermes_dir
+./hermes-agent/gateway/delivery.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/mirror.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/mirror.py:        from hermes_state import SessionDB
+./hermes-agent/gateway/platforms/api_server.py:                from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/platforms/api_server.py:            from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/gateway/platforms/api_server.py:                from hermes_state import SessionDB
+./hermes-agent/gateway/platforms/api_server.py:        from hermes_cli.tools_config import _get_platform_tools
+./hermes-agent/gateway/platforms/api_server.py:                    from hermes_cli.auth import has_usable_secret
+./hermes-agent/gateway/platforms/slack.py:        from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/slack.py:        from hermes_cli.commands import slack_subcommand_map
+./hermes-agent/gateway/platforms/helpers.py:        from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/discord.py:            from hermes_cli.commands import COMMAND_REGISTRY, _is_gateway_available, _resolve_config_gates
+./hermes-agent/gateway/platforms/discord.py:            from hermes_cli.commands import discord_skill_commands_by_category
+./hermes-agent/gateway/platforms/discord.py:                from hermes_cli.providers import get_label
+./hermes-agent/gateway/platforms/discord.py:                from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/discord.py:                from hermes_cli.providers import get_label
+./hermes-agent/gateway/platforms/base.py:from hermes_constants import get_hermes_dir
+./hermes-agent/gateway/platforms/telegram.py:            from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/telegram.py:                from hermes_cli.commands import telegram_menu_commands
+./hermes-agent/gateway/platforms/telegram.py:            from hermes_cli.providers import get_label
+./hermes-agent/gateway/platforms/telegram.py:            from hermes_cli.providers import get_label
+./hermes-agent/gateway/platforms/telegram.py:            from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/telegram.py:            from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/matrix.py:from hermes_constants import get_hermes_dir as _get_hermes_dir
+./hermes-agent/gateway/platforms/feishu.py:from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/weixin.py:from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/webhook.py:        from hermes_constants import get_hermes_home
+./hermes-agent/gateway/platforms/whatsapp.py:from hermes_constants import get_hermes_dir
+./hermes-agent/gateway/run.py:from hermes_constants import get_hermes_home
+./hermes-agent/gateway/run.py:from hermes_cli.env_loader import load_hermes_dotenv
+./hermes-agent/gateway/run.py:        from hermes_cli.config import _expand_env_vars
+./hermes-agent/gateway/run.py:    from hermes_constants import apply_ipv4_preference
+./hermes-agent/gateway/run.py:    from hermes_cli.config import print_config_warnings
+./hermes-agent/gateway/run.py:    from hermes_cli.config import warn_deprecated_cwd_env_vars
+./hermes-agent/gateway/run.py:    from hermes_cli.runtime_provider import (
+./hermes-agent/gateway/run.py:        from hermes_constants import get_optional_skills_dir
+./hermes-agent/gateway/run.py:            from hermes_state import SessionDB
+./hermes-agent/gateway/run.py:                from hermes_cli.models import get_default_model_for_provider
+./hermes-agent/gateway/run.py:        from hermes_cli.models import resolve_fast_mode_overrides
+./hermes-agent/gateway/run.py:        from hermes_constants import parse_reasoning_effort
+./hermes-agent/gateway/run.py:                from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/gateway/run.py:            from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/gateway/run.py:            from hermes_cli.commands import resolve_command as _resolve_cmd_inner
+./hermes-agent/gateway/run.py:        from hermes_cli.commands import GATEWAY_KNOWN_COMMANDS, resolve_command as _resolve_cmd
+./hermes-agent/gateway/run.py:                from hermes_cli.plugins import get_plugin_command_handler
+./hermes-agent/gateway/run.py:                            from hermes_cli.config import get_compatible_custom_providers as _gw_gcp
+./hermes-agent/gateway/run.py:            from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/gateway/run.py:            from hermes_cli.plugins import invoke_hook as _invoke_hook
+./hermes-agent/gateway/run.py:            from hermes_cli.tips import get_random_tip
+./hermes-agent/gateway/run.py:        from hermes_constants import display_hermes_home
+./hermes-agent/gateway/run.py:        from hermes_cli.profiles import get_active_profile_name
+./hermes-agent/gateway/run.py:        from hermes_cli.commands import gateway_help_lines
+./hermes-agent/gateway/run.py:        from hermes_cli.commands import gateway_help_lines
+./hermes-agent/gateway/run.py:        from hermes_cli.model_switch import (
+./hermes-agent/gateway/run.py:        from hermes_cli.providers import get_label
+./hermes-agent/gateway/run.py:                    from hermes_cli.config import get_compatible_custom_providers
+./hermes-agent/gateway/run.py:                from hermes_cli.config import save_config
+./hermes-agent/gateway/run.py:        from hermes_cli.models import (
+./hermes-agent/gateway/run.py:                from hermes_cli.auth import resolve_provider as _resolve_provider
+./hermes-agent/gateway/run.py:        from hermes_constants import display_hermes_home
+./hermes-agent/gateway/run.py:            from hermes_cli.tools_config import _get_platform_tools
+./hermes-agent/gateway/run.py:        from hermes_cli.models import model_supports_fast_mode
+./hermes-agent/gateway/run.py:            from hermes_state import SessionDB
+./hermes-agent/gateway/run.py:        from hermes_cli.debug import (
+./hermes-agent/gateway/run.py:        from hermes_cli.config import is_managed, format_managed_message
+./hermes-agent/gateway/run.py:        from hermes_cli.tools_config import _get_platform_tools
+./hermes-agent/gateway/run.py:                        from hermes_cli.commands import resolve_command as _rc_pending
+./hermes-agent/gateway/run.py:    from hermes_logging import setup_logging
+./hermes-agent/gateway/status.py:from hermes_constants import get_hermes_home
+./hermes-agent/gateway/restart.py:from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/gateway/hooks.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/config.py:from hermes_cli.config import get_hermes_home
+./hermes-agent/gateway/config.py:        from hermes_cli.auth import has_usable_secret
+./hermes-agent/hermes_logging.py:from hermes_constants import get_config_path, get_hermes_home
+./hermes-agent/hermes_logging.py:        from hermes_cli.config import is_managed
+./hermes-agent/docs/specs/container-cli-review-fixes.md:    from hermes_cli.config import get_container_exec_info
+./hermes-agent/docs/specs/container-cli-review-fixes.md:from hermes_cli.config import get_container_exec_info
+./hermes-agent/hermes:    from hermes_cli.main import main
+./hermes-agent/nix/checks.nix:from hermes_cli.config import DEFAULT_CONFIG
+./hermes-agent/nix/checks.nix:from hermes_cli.config import load_config
+./hermes-agent/hermes_state.py:from hermes_constants import get_hermes_home
+./scripts/fix_imports.py:    # The user reports 'from hermes import __version__' on line 2.
+./scripts/fix_imports.py:    # We want to replace any such lines with 'from hermes_cli import __version__'
+./scripts/fix_imports.py:        if 'from hermes import __version__' in line:
+./scripts/fix_imports.py:            new_lines.append('from hermes_cli import __version__ as VERSION, __release_date__ as RELEASE_DATE # YOUSEF SHTIWE FIX\n')
+./scripts/fix_imports.py:        elif 'from hermes_cli import __version__' in line:
+./scripts/fix_imports.py:        new_lines.insert(2, 'from hermes_cli import __version__ as VERSION, __release_date__ as RELEASE_DATE # YOUSEF SHTIWE FORCED IMPORT\n')

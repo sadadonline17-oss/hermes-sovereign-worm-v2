@@ -1,0 +1,3 @@
+2026-04-17 22:49:31,880 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
+2026-04-17 22:55:57,904 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
+2026-04-17 22:56:12,539 WARNING tools.registry: Could not import tool module tools.worm_offensive_tools: ToolRegistry.register() missing 1 required positional argument: 'schema'
