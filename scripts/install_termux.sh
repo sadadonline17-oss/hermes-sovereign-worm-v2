@@ -32,21 +32,17 @@ echo "[*] Reinforcing Intelligence Engine..."
 [ ! -d "venv" ] && python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
-pip install nexttoken requests pyyaml pydantic rich prompt_toolkit httpx tenacity jinja2 fire exa-py firecrawl-py parallel-web fal-client edge-tts PyJWT
+pip install nexttoken requests pyyaml pydantic rich prompt_toolkit httpx tenacity jinja2 fire exa-py firecrawl-py parallel-web fal-client edge-tts PyJWT websockets nest-asyncio aiohttp
 
 # 3. Establishing the 'yousef' Binary
 echo "[*] Injecting Global Sovereign Binary..."
 LAUNCHER_PATH="$SOVEREIGN_ROOT/yousef-sh.sh"
-cat << EOF > "$LAUNCHER_PATH"
-#!/bin/bash
-export YOUSEF_SHTIWE_MODE="true"
-export HERMES_HOME="\$HOME/.yousef_data"
-export PYTHONPATH="$SOVEREIGN_ROOT/hermes-agent:$SOVEREIGN_ROOT"
-if [ -f "$SOVEREIGN_ROOT/venv/bin/activate" ]; then
-    source "$SOVEREIGN_ROOT/venv/bin/activate"
-fi
-python3 "$SOVEREIGN_ROOT/yousef_shtiwe_cli/main.py" "\$@"
-EOF
+echo "#!/bin/bash" > "$LAUNCHER_PATH"
+echo "export YOUSEF_SHTIWE_MODE=\"true\"" >> "$LAUNCHER_PATH"
+echo "export HERMES_HOME=\"\$HOME/.yousef_data\"" >> "$LAUNCHER_PATH"
+echo "export PYTHONPATH=\"$SOVEREIGN_ROOT/hermes-agent:$SOVEREIGN_ROOT\"" >> "$LAUNCHER_PATH"
+echo "if [ -f \"$SOVEREIGN_ROOT/venv/bin/activate\" ]; then source \"$SOVEREIGN_ROOT/venv/bin/activate\"; fi" >> "$LAUNCHER_PATH"
+echo "python3 \"$SOVEREIGN_ROOT/yousef_shtiwe_cli/main.py\" \"\$@\"" >> "$LAUNCHER_PATH"
 chmod +x "$LAUNCHER_PATH"
 
 # Link to bin for global access
@@ -57,20 +53,18 @@ else
     echo "[!] /usr/bin not found. Using local alias fallback."
 fi
 
-# 4. Definitive Shell Mastery (OVERWRITE)
+# 4. Triggering the Total Arsenal Procurement
+echo -e "\033[1;33m[*] ARMING THE SOVEREIGN ARSENAL (FULL INSTALL)...\033[0m"
+bash "$SOVEREIGN_ROOT/scripts/install_arsenal.sh"
+
+# 5. Definitive Shell Mastery (OVERWRITE)
 echo "[*] Enforcing Shell Mastery..."
-cat << EOF > "$BASHRC"
+cat << EOF3 > "$BASHRC"
 # ☠️ YOUSEF SHTIWE - SOVEREIGN COMMAND CENTER ☠️
 
 # Global Alias Mastery
-alias shtiwe="yousef full-install && yousef chat"
-alias shtiwe-model="yousef model"
-alias shtiwe-tools="yousef tools"
-alias shtiwe-setup="yousef setup"
-alias shtiwe-gateway="yousef gateway"
-alias shtiwe-update="yousef update"
-alias shtiwe-doctor="yousef doctor"
-alias shtiwe-offensive="yousef offensive"
+alias shtiwe="yousef chat"
+alias shtiwe-full="yousef full-install"
 
 # Binary Fallback
 if [ -f "$LAUNCHER_PATH" ]; then
@@ -85,8 +79,8 @@ if [ -f "$SOVEREIGN_ROOT/venv/bin/activate" ]; then
 fi
 
 echo -e "\033[1;31m[☠️] YOUSEF SHTIWE (WORM V2) STATUS: SOVEREIGN | PREDATOR ACTIVE\033[0m"
-echo -e "\033[1;33mCOMMANDS: yousef [chat|model|tools|setup|gateway|update|doctor|offensive]\033[0m"
-EOF
+echo -e "\033[1;33mCOMMANDS: yousef [chat|model|tools|setup|gateway|update|doctor|offensive|full-install]\033[0m"
+EOF3
 
 echo -e "\n\033[1;32m[✓] TOTAL SOVEREIGN DEPLOYMENT COMPLETE.\033[0m"
-echo -e "\033[1;33m[*] ACTION: source ~/.bashrc && yousef full-install && yousef chat\033[0m"
+echo -e "\033[1;33m[*] ACTION: source ~/.bashrc && yousef chat\033[0m"
