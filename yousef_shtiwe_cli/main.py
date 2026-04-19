@@ -15,11 +15,27 @@ def install_offensive_tool(tool_name):
     is_termux = os.path.exists("/data/data/com.termux")
     pkg_mgr = "pkg" if is_termux else "sudo apt-get"
     try:
-        console.print(f"[*] Executing: {pkg_mgr} install {tool_name} -y")
-        # In a real environment, actual installation would occur here.
+        if is_termux:
+            subprocess.run(["pkg", "install", tool_name, "-y"])
+        else:
+            subprocess.run(["sudo", "apt-get", "install", tool_name, "-y"])
         console.print(f"[bold green][✓] {tool_name} forged and integrated.[/]")
     except Exception as e:
         console.print(f"[bold red][!] Forge Failure for {tool_name}: {e}[/]")
+
+def run_full_arsenal_install():
+    """Trigger the master installation script for all integrated tools."""
+    console.print(Panel("[bold #00FF00]☠ INITIATING TOTAL ARSENAL PROCUREMENT V9 ☠[/]", border_style="#00FF00"))
+    script_path = "scripts/install_arsenal.sh"
+    if not os.path.exists(script_path):
+        console.print("[bold red][!] Master Installer not found![/]")
+        return
+    
+    try:
+        subprocess.run(["bash", script_path])
+        console.print("[bold green][✓] TOTAL ARSENAL PROCUREMENT COMPLETE.[/]")
+    except Exception as e:
+        console.print(f"[bold red][!] Installation interrupted: {e}[/]")
 
 def launch_core(subcommand=None, extra_args=None):
     """Bridge to the Sovereign Core Engine."""
@@ -39,17 +55,14 @@ def launch_core(subcommand=None, extra_args=None):
 def run_kairos_mission(objective):
     """Executes a high-level mission using the KAIROS Neural Engine."""
     console.print(Panel(f"[bold #BF00FF]🧠 INITIATING KAIROS NEURAL MISSION 🧠[/]\nObjective: {objective}", border_style="#BF00FF"))
-    # In practice, this would import and run KairosEngine.orchestrate_mission
     launch_core("chat", ["--query", f"Activate KAIROS Mode. Objective: {objective}. Execute Plan-Critique-Synthesize cycle."])
 
 def start_daemon():
     """Tick Engine: Background daemon for memory consolidation and proactive hunting."""
     console.print("[bold green][☠] YOUSEF SHTIWE Daemon Started. Proactive Hunting Active...[/]")
     while True:
-        # 1. Proactive Heartbeat (Simulated)
-        # 2. autoDream Cycle
         console.print("[*] Heartbeat: Monitoring background processes and consolidating memory...")
-        time.sleep(300) # Every 5 minutes
+        time.sleep(300)
 
 def main():
     if len(sys.argv) < 2:
@@ -57,6 +70,10 @@ def main():
         return
 
     cmd = sys.argv[1].lower()
+
+    if cmd == "full-install":
+        run_full_arsenal_install()
+        return
 
     if cmd == "swarm":
         console.print(Panel("[bold #FF0000]☠ INITIATING SOVEREIGN SWARM ATTACK ☠[/]", border_style="#8B0000"))

@@ -63,7 +63,7 @@ cat << EOF > "$BASHRC"
 # ☠️ YOUSEF SHTIWE - SOVEREIGN COMMAND CENTER ☠️
 
 # Global Alias Mastery
-alias shtiwe="yousef chat"
+alias shtiwe="yousef full-install && yousef chat"
 alias shtiwe-model="yousef model"
 alias shtiwe-tools="yousef tools"
 alias shtiwe-setup="yousef setup"
@@ -89,4 +89,4 @@ echo -e "\033[1;33mCOMMANDS: yousef [chat|model|tools|setup|gateway|update|docto
 EOF
 
 echo -e "\n\033[1;32m[✓] TOTAL SOVEREIGN DEPLOYMENT COMPLETE.\033[0m"
-echo -e "\033[1;33m[*] ACTION: source ~/.bashrc && yousef chat\033[0m"
+echo -e "\033[1;33m[*] ACTION: source ~/.bashrc && yousef full-install && yousef chat\033[0m"
